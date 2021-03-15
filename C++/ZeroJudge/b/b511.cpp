@@ -4,7 +4,7 @@ using namespace std;
 int N;
 int ans[6];
 
-void combination(int *face, int money, int j){
+void combination(int face[], int money, int j){
     int i;
 
     if(money==0){

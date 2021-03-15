@@ -5,7 +5,7 @@ using namespace std;
 int tmpi1, tmpi2;
 string ans;
 
-void sum(char *a){
+void sum(char a[]){
     stringstream ss;
     string num3;
     int s=0, num1, num2;
@@ -53,7 +53,7 @@ void sum(char *a){
         ans.insert(0, num3);
     }
 }
-void dif(char *a){
+void dif(char a[]){
     stringstream ss;
     string num3;
     int s=0, num1, num2, c=0;
@@ -142,7 +142,7 @@ void dif(char *a){
 		ans.insert(0, num3);
 	}
 }
-void pro(char *a){
+void pro(char a[]){
     stringstream ss;
     string num3;
     int nump[tmpi2-3]={0}, s=0, num1, num2;
@@ -175,7 +175,7 @@ void pro(char *a){
     for(i=0; ans[i]=='0'; ++i);
     ans.erase(0, i);
 }
-void quo(char *a){
+void quo(char a[]){
     stringstream ss;
     string num3;
     int numq[tmpi1], ansq[tmpi1]={0}, s=0, num1, num2, c=0;

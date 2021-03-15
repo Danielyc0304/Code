@@ -10,7 +10,7 @@ struct data{
 bool cmp(struct data a, struct data b){
     return a.weight*b.frequency<b.weight*a.frequency;
 }
-int access(struct data *a, int i){
+int access(struct data a[], int i){
     int sum=0;
 
     for(; i>=0; --i)
