@@ -10,8 +10,7 @@ int main(){
     cin>>n>>m;
 
     for(; n<=m; ++n){
-        for(s=0; n/pow(10, s)>=1; ++s){}
-        
+        for(s=0; n/pow(10, s)>=1; ++s);
         tmp=n;
 
         while(tmp!=0){

@@ -17,7 +17,7 @@ int main(){
             cout<<grade[i]<<' ';
     cout<<grade[i]<<endl;
 
-    for(i=0; grade[i]<60 && i<a; ++i){}
+    for(i=0; grade[i]<60 && i<a; ++i);
 
     if(grade[0]>=60)
         cout<<"best case\n";

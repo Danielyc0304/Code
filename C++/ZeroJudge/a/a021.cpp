@@ -132,7 +132,7 @@ void dif(char *a){
 		
 		ans.insert(0, num3);
 	}
-	for(i=0; ans[i]=='0'; ++i){}
+	for(i=0; ans[i]=='0'; ++i);
 	ans.erase(0, i);
 	
 	if(ans[0]=='\0')
@@ -172,7 +172,7 @@ void pro(char *a){
 
         ans.insert(0, num3);
     }
-    for(i=0; ans[i]=='0'; ++i){}
+    for(i=0; ans[i]=='0'; ++i);
     ans.erase(0, i);
 }
 void quo(char *a){
@@ -275,9 +275,9 @@ int main(){
 
     cin.get(a, sizeof(a));
 
-    for(i=0; a[i]!=' '; ++i){}
+    for(i=0; a[i]!=' '; ++i);
     tmpi1=i;
-    for(i+=3; a[i]!='\0'; ++i){}
+    for(i+=3; a[i]!='\0'; ++i);
     tmpi2=i;
 
     if(a[tmpi1+1]=='+')

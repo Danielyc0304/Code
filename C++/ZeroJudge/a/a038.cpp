@@ -10,7 +10,7 @@ int main(){
 
     reverse(a.begin(), a.end());
 
-    for(i=0; a[i]=='0'; ++i){}
+    for(i=0; a[i]=='0'; ++i);
     a.erase(0, i);
 
     if(a[0]=='\0')

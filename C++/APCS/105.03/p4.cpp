@@ -53,7 +53,7 @@ int main(){
 		num[a].push_back(b);
 		child[b]=1;
 	}
-	for(i=0; child[i]!=0; ++i){}
+	for(i=0; child[i]!=0; ++i);
 
 	rdis=DFS(i);
 	mdis=max(mdis, rdis);
