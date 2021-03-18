@@ -14,6 +14,14 @@ int main(){
     else if(s>=60)
         cout<<"PASS\n";
     else
-        cout<<"FAIL\n";
+        cout<<"FAIL\n";//判斷成績
     return 0;
 }
+/*
+Input:
+150
+280
+96
+Output:
+BS
+*/

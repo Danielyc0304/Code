@@ -18,3 +18,14 @@ int main(){
     }
     return 0;
 }
+/*
+Input:
+-2
+Output:
+M
+*//*
+Input:
+3
+Output:
+O
+*/

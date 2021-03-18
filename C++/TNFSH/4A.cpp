@@ -23,6 +23,28 @@ int main(){
     if(s>=60)
         cout<<"Hmm\n";
     else
-        cout<<"PleaseGoToDieOneDie\n";
+        cout<<"PleaseGoToDieOneDie\n";//判斷成績
     return 0;
 }
+/*
+Input:
+70
+80
+66
+Output:
+Hmm
+*//*
+Input:
+30
+20
+10
+Output:
+PleaseGoToDieOneDie
+*//*
+Input:
+700
+800
+660
+Output:
+ReCheckScores
+*/

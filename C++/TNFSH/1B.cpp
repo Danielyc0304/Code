@@ -5,7 +5,14 @@ int main(){
     int a, b;
 
     cin>>a>>b;
-    cout<<a*a*b*3.1416<<endl;
+    cout<<a*a*b*3.1416<<endl;//輸出圓柱體面積
 
     return 0;
 }
+/*
+Input:
+10
+5
+Output:
+1570.8
+*/
