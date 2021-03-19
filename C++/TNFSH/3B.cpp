@@ -2,8 +2,8 @@
 using namespace std;
 
 int main(){
-    int a, b, c;
-    double s;
+    int a, b, c;//a, b, c成績
+    double s;//s計算值
 
     cin>>a>>b>>c;
 

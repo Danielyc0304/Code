@@ -2,9 +2,9 @@
 using namespace std;
 
 int main(){
-    int x, num;
-    int c=0;
-    int i;
+    int x, num;//x總數, num數字
+    int c=0;//c計數
+    int i;//i旗標
 
     cin>>x;
 
@@ -17,6 +17,17 @@ int main(){
     if(c==0)
         cout<<"NO\n";
     else
-        cout<<"YES\n";
+        cout<<"YES\n";//判斷數字
     return 0;
 }
+/*
+Input:
+4 11 12 14 15
+Output:
+NO
+*//*
+Input:
+6 70 16 87 30 2 18
+Output:
+YES
+*/

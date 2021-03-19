@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    int a, b;
+    int a, b;//a, b成績
 
     cin>>a>>b;
     cout<<(a+b)/2<<endl;//輸出平均

@@ -4,7 +4,7 @@
 using namespace std;
 
 int main(){
-    int h;
+    int h;//h高度
 
     cin>>h;
     cout<<fixed<<setprecision(1)<<sqrt(2*h/9.8)<<endl;//輸出自由落體所需時間

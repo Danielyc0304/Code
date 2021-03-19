@@ -2,8 +2,8 @@
 using namespace std;
 
 int main(){
-    int n;
-    double ans=0;
+    int n;//n秒數
+    double ans=0;//ans答案
 
     cin>>n;
 

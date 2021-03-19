@@ -3,10 +3,10 @@
 using namespace std;
 
 int main(){
-    int grade[101], n;
-    int max=0, maxi, c1=0, c2=0, c3=0, c4=0, c5=0;
-    double sum=0;
-    int i;
+    int grade[101], n;//grade[101]成績, n成績
+    int max=0, maxi, c1=0, c2=0, c3=0, c4=0, c5=0;//max最大值, maxi最大值項數, c1, c2, c3, c4, c5計數
+    double sum=0;//sum總和
+    int i;//i旗標
 
     cin>>n;
 
@@ -19,20 +19,14 @@ int main(){
             max=grade[i];
             maxi=i;
         }
-
-        if(grade[i]>=90)
-            ++c1;
-        else if(grade[i]>=80)
-            ++c2;
-        else if(grade[i]>=70)
-            ++c3;
-        else if(grade[i]>=60)
-            ++c4;
-        else
-            ++c5;
+        if(grade[i]>=90) ++c1;
+        else if(grade[i]>=80) ++c2;
+        else if(grade[i]>=70) ++c3;
+        else if(grade[i]>=60) ++c4;
+        else ++c5;
     }
     cout<<fixed<<setprecision(2)<<sum/n<<endl;
-    cout<<maxi<<endl;
+    cout<<maxi<<endl;//輸出平均、最大值項數
 
     cout<<"A:";
     for(i=0; i<c1; ++i)
@@ -57,7 +51,32 @@ int main(){
     cout<<"E:";
     for(i=0; i<c5; ++i)
         cout<<'*';
-    cout<<endl;
+    cout<<endl;//輸出圖表
 
     return 0;
 }
+/*
+Input:
+10
+42 71 63 73 1 52 8 40 38 88
+Output:
+47.60
+10
+A:
+B:*
+C:**
+D:*
+E:******
+*//*
+Input:
+20
+77 50 36 87 31 74 95 3 11 23 93 90 31 77 21 91 2 80 44 73
+Output:
+54.45
+7
+A:****
+B:**
+C:****
+D:
+E:**********
+*/

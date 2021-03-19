@@ -2,8 +2,8 @@
 using namespace std;
 
 int main(){
-    int n;
-    int ans;
+    int n;//n距離
+    int ans;//ans答案
 
     cin>>n;
 

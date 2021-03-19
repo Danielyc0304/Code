@@ -2,8 +2,8 @@
 using namespace std;
 
 int main(){
-    int n;
-    int i;
+    int n;//n數字
+    int i;//i旗標
 
     cin>>n;
 

@@ -2,8 +2,8 @@
 using namespace std;
 
 int main(){
-    int a, b;
-    int i, j;
+    int a, b;//a, b數字
+    int i, j;//i, j旗標
 
     cin>>a>>b;
 
@@ -17,7 +17,26 @@ int main(){
             if(b%2==1)
                 cout<<'*';
         }
-        cout<<endl;
+        cout<<endl;//輸出結果
     }
     return 0;
 }
+/*
+Input:
+3
+5
+Output:
+*****
+*0*0*
+*****
+*//*
+Input:
+5
+11
+Output:
+***********
+*0*0*0*0*0*
+***********
+*0*0*0*0*0*
+***********
+*/

@@ -2,24 +2,24 @@
 using namespace std;
 
 int main(){
-    int a, b;
+    int X, Y;//X, Y座標
 
-    cin>>a>>b;
+    cin>>X>>Y;
 
-    if(a!=0 && b!=0){
-        cout<<"The coordinate point ("<<a<<','<<b<<") lies in the ";
-        if(a>0 && b>0)
+    if(X!=0 && Y!=0){
+        cout<<"The coordinate point ("<<X<<','<<Y<<") lies in the ";
+        if(X>0 && Y>0)
             cout<<"First";
-        else if(a<0 && b>0)
+        else if(X<0 && Y>0)
             cout<<"Second";
-        else if(a<0 && b<0)
+        else if(X<0 && Y<0)
             cout<<"third";
         else
             cout<<"fourth";
         cout<<" quandrant.\n";
     }
     else
-        cout<<"The coordinate point ("<<a<<','<<b<<") lies at the origin.";//判斷座標位置
+        cout<<"The coordinate point ("<<X<<','<<Y<<") lies at the origin.";//判斷座標位置
     return 0;
 }
 /*

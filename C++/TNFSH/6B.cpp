@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    int n, m;
+    int n, m;//n起始溫度, m結束溫度
 
     cin>>n>>m;
 

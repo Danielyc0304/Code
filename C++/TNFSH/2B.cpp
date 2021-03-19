@@ -4,8 +4,8 @@
 using namespace std;
 
 int main(){
-    int a, b, c;
-    double s;
+    int a, b, c;//a, b, c一元二次方程式三係數
+    double s;//s計算值
 
     cin>>a>>b>>c;
     

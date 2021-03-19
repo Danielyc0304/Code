@@ -2,9 +2,9 @@
 using namespace std;
 
 int main(){
-	int x;
-	int n=1, m;
-	int i, j;
+	int x;//x數字
+	int n=1, m;//n, m運算
+	int i, j;//i, j旗標
 	
 	cin>>x;
 	
@@ -19,7 +19,23 @@ int main(){
 			cout<<'.';
 		cout<<endl;
 		
-		++n, --m;
+		++n, --m;//輸出結果
 	}
 	return 0;
 }
+/*
+Input:
+3
+Output:
+.*****.
+..***..
+...*...
+*//*
+Input:
+4
+Output:
+.*******.
+..*****..
+...***...
+....*....
+*/

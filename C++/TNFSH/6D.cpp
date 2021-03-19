@@ -2,8 +2,8 @@
 using namespace std;
 
 int main(){
-    int m, n;
-    int i;
+    int m, n;//m功力值, n鞭數
+    int i;//i旗標
 
     cin>>m>>n;
 

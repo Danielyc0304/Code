@@ -4,8 +4,8 @@
 using namespace std;
 
 int main(){
-    double a, b, c;
-    double s;
+    double a, b, c;//a, b, c三角形三邊長
+    double s;//s計算值
 
     cin>>a>>b>>c;
 

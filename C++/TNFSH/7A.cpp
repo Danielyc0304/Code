@@ -2,8 +2,8 @@
 using namespace std;
 
 int main(){
-    int x, y;
-    long int ans=0;
+    int x, y;//x起始數字, y結束數字
+    long int ans=0;//ans答案
 
     cin>>x>>y;
 

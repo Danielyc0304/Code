@@ -2,8 +2,8 @@
 using namespace std;
 
 int main(){
-    int n;
-    int i, j;
+    int n;//n數字
+    int i, j;//i, j旗標
 
     cin>>n;
 
@@ -12,7 +12,23 @@ int main(){
             cout<<'.';
         for(j=0; j<i; ++j)
             cout<<'*';
-        cout<<endl;
+        cout<<endl;//輸出結果
     }
     return 0;
 }
+/*
+Input:
+5
+Output:
+....*
+...**
+..***
+.****
+*****
+*//*
+Input:
+2
+Output:
+.*
+**
+*/
