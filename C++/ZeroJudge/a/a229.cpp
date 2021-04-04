@@ -1,23 +1,56 @@
 #include<iostream>
 using namespace std;
 
-int N;
-char ans[27];
+int N;//N數字
+char ans[27];//ans答案
 
-void DFS(int left, int right, int i){
-    if(left>N || left<right)
+void DFS(int left, int right, int i){//深度優先搜尋; left左括號; right右括號; i旗標
+    if(left>N || left<right)//如果左括號大於數字或小於右括號
         return;
-    else if(i==2*N){
-        ans[i]='\0';
+    if(i==2*N){//如果執行結束
+        ans[i]='\0';//加上結束字符
         printf("%s\n", ans);
 
         return;
     }
-    ans[i]='(', DFS(left+1, right, i+1);
-    ans[i]=')', DFS(left, right+1, i+1);
+    ans[i]='(', DFS(left+1, right, i+1);//加上左括號
+    ans[i]=')', DFS(left, right+1, i+1);//加上右括號
 }
 int main(){
     while(scanf("%d", &N)!=-1)
-        DFS(0, 0, 0);
+        DFS(0, 0, 0);//輸出結果
     return 0;
 }
+/*
+Input:
+1
+2
+3
+4
+Output:
+()
+ 
+(())
+()()
+ 
+((()))
+(()())
+(())()
+()(())
+()()()
+
+(((())))
+((()()))
+((())())
+((()))()
+(()(()))
+(()()())
+(()())()
+(())(())
+(())()()
+()((()))
+()(()())
+()(())()
+()()(())
+()()()()
+*/

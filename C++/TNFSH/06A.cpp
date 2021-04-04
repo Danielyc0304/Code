@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    int n, s;//n人數, s起始號碼
+    int n, s;//n人數; s起始號碼
     int i;//i旗標
 
     cin>>n>>s;

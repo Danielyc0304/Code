@@ -25,7 +25,7 @@ int main(){
     else if(a*a+b*b>c*c)
         cout<<"acute\n";
     else
-        cout<<"obtuse\n";//判斷三角形
+        cout<<"obtuse\n";//判斷、輸出三角形
     s=(a+b+c)/2;
 
     cout<<fixed<<setprecision(4)<<sqrt(s*(s-a)*(s-b)*(s-c))<<endl;//輸出三角形面積

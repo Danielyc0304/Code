@@ -11,9 +11,9 @@ int main(){
     for(; x>0; --x){
         for(i=1; i<=x; ++i)
             ans+=i;
-        cout<<"Sigma("<<x<<")="<<ans<<endl;
+        cout<<"Sigma("<<x<<")="<<ans<<endl;//輸出累加
 
-        ans=0;//輸出累加
+        ans=0;//初始化
     }
     return 0;
 }

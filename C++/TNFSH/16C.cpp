@@ -3,8 +3,8 @@
 using namespace std;
 
 int main(){
-    int n, a, b, c;//n總數, a, b, c成績
-    double grade[101];//grade[101]三科成績總和
+    int n, a, b, c;//n全班人數; a, b, c成績
+    double grade[100];//grade三科成績總和
     int i;//i旗標
 
     cin>>n;

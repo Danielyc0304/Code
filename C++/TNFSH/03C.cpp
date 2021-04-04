@@ -18,7 +18,7 @@ int main(){
     if(s>=60)
         cout<<"Hmm\n";
     else
-        cout<<"PleaseGoToDieOneDie\n";//判斷成績
+        cout<<"PleaseGoToDieOneDie\n";//判斷、輸出結果
     return 0;
 }
 /*

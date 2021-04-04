@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    int people[46], a, b, c;//people[46]出缺席, a全班人數, b出席人數, c出席人
+    int people[45], a, b, c;//people出缺席; a全班人數; b出席人數; c出席人
     int i;//i旗標
 
     cin>>a>>b;

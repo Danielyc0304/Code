@@ -2,11 +2,11 @@
 #include<sstream>
 using namespace std;
 
-string brackets(string a){
-    stringstream ss;
-    string num3;
-    int s, num1=0, num2=0, tmpi1, tmpi2, tmpi3, tmpi4;
-    int i, j=-1, k=-1;
+string brackets(string a){//處理括號內; a算式
+    stringstream ss;//ss字串串流
+    string num3;//num3數字
+    int s, num1, num2, tmpi1, tmpi2, tmpi3, tmpi4;//s計算值; num1, num2數字; tmpi1, tmpi2, tmpi3, tmpi4暫存定位點
+    int i, j=-1, k=-1;//i, j, k旗標
 
     for(i=0; i<a.length(); ++i){
         if(a[i]=='('){
@@ -115,13 +115,13 @@ string brackets(string a){
             i=-1, j=-1, k=-1;
         }
     }
-    return a;
+    return a;//回傳處理括號後的算式
 }
-string outside(string a){
-    stringstream ss;
-    string num3;
-    int s, num1=0, num2=0, tmpi1, tmpi2, tmpi3, tmpi4;
-    int i=-2;
+string outside(string a){//處理剩餘的; a算式
+    stringstream ss;//ss字串串流
+    string num3;//num3數字
+    int s, num1=0, num2=0, tmpi1, tmpi2, tmpi3, tmpi4;//s計算值; num1, num2數字; tmpi1, tmpi2, tmpi3, tmpi4暫存定位點
+    int i=-2;//i旗標
 
     while(1){
         tmpi2=i;
@@ -214,12 +214,23 @@ string outside(string a){
         i=tmpi2;
         num1=0, num2=0;
     }
-    return a;
+    return a;//回傳答案
 }
 int main(){
-    string a;
+    string a;//a算式
 
     while(getline(cin, a))
-        cout<<outside(brackets(a))<<endl;
+        cout<<outside(brackets(a))<<endl;//輸出結果
     return 0;
 }
+/*
+Input:
+2 + 3 * 4
+Output:
+14
+*//*
+Input:
+2 * ( 3 + 4 ) * 5
+Output:
+70
+*/

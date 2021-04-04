@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    int n, num;//n總數, num數字
+    int n, num;//n數字總數; num數字
     int c=0;//c計數
     int i;//i旗標
 
@@ -17,7 +17,7 @@ int main(){
     if(c==0)
         cout<<"Very Good!!!\n";
     else
-        cout<<"Oh, No!!!\n";//判斷偶數
+        cout<<"Oh, No!!!\n";//判斷、輸出結果
     return 0;
 }
 /*

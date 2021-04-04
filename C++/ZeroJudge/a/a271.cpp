@@ -1,11 +1,13 @@
 #include<iostream>
+#include<sstream>
 using namespace std;
 
 int main(){
-    string food;
-    int a, x, y, z, w, n, m;
-    int c=0;
-    int i, j;
+    string food;//food食物
+    int a, x, y, z, w, n, m;//a測資總數; x紅蘿蔔; y白蘿蔔; z黃蘿蔔; w發霉蘿蔔; n中毒; m體重
+    stringstream ss;//s字串串流
+    int c=0, tmp;//c計數; tmp暫存值
+    int i;//i旗標
 
     cin>>a;
 
@@ -13,24 +15,22 @@ int main(){
         cin>>x>>y>>z>>w>>n>>m;
         cin.get();
         getline(cin, food);
+        
+        ss<<food;
 
-        for(j=0; j<food.length(); j+=2){
+        while(ss>>tmp){
             m-=c*n;
-            
+
             if(m<=0){
                 cout<<"bye~Rabbit\n";
 
                 break;
             }
-            if(food[j]=='1')
-                m+=x;
-            else if(food[j]=='2')
-                m+=y;
-            else if(food[j]=='3')
-                m-=z;
-            else if(food[j]=='4'){
-                m-=w;
-                ++c;
+            switch(tmp){
+                case 1: m+=x; break;
+                case 2: m+=y; break;
+                case 3: m-=z; break;
+                case 4: m-=w, ++c;
             }
             if(m<=0){
                 cout<<"bye~Rabbit\n";
@@ -39,8 +39,26 @@ int main(){
             }
         }
         if(m>0)
-            cout<<m<<'g'<<endl;
-        c=0;
+            cout<<m<<'g'<<endl;//輸出結果
+        ss.clear(), ss.str("");
+        c=0;//初始化
     }
     return 0;
 }
+/*
+Input:
+4
+5 3 2 4 3 10
+1 1 2 3 3 3 3 4 3 3
+5 3 2 4 3 10
+1 1 2 3 3 3 3 4 3 3 2 2 2 2 2 2 2
+5 3 2 4 3 10
+4 1 3 3 1 1 2 2 1 1 3 1 1 1 1 4
+10 3 2 2 1 5
+1 4 4 0 0 4 1 2 2 2 0 0 2 2 0
+Output:
+1g
+bye~Rabbit
+bye~Rabbit
+bye~Rabbit
+*/

@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    int a, b, c;//a起始數字, b結束數字, c目標數字
+    int a, b, c;//a起始數字; b結束數字; c目標數字
     int ans;//ans答案
     int i;//i旗標
 

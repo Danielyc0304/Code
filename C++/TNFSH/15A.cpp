@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    int num[41], N;//num[41]數字, N總數
+    int num[40], N;//num數字; N數字總數
     int i;//i旗標
 
     cin>>N;

@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    int n, grade;//n總數, grade成績
+    int n, grade;//n成績總數; grade成績
     int c=0;//c計數
     int i;//i旗標
 
@@ -17,7 +17,7 @@ int main(){
     if(c==0)
         cout<<"HAHA, I PASS!!! Bite me!!!\n";
     else
-        cout<<"Oh, No!!!\n";//判斷成績
+        cout<<"Oh, No!!!\n";//判斷、輸出結果
     return 0;
 }
 /*

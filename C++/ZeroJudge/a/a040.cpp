@@ -3,9 +3,9 @@
 using namespace std;
 
 int main(){
-    int n, m;
-    int s, num, tmp, sum=0, c=0;
-    int i;
+    int n, m;//n起始數字; m結束數字
+    int s, c=0, num, tmp, sum=0;//s計算值; c計數; num數字; tmp暫存值; sum總和
+    int i;//i旗標
 
     cin>>n>>m;
 
@@ -26,7 +26,18 @@ int main(){
     }
     if(c==0)
         cout<<"none";
-    cout<<endl;
+    cout<<endl;//判斷、輸出結果
 
     return 0;
 }
+/*
+Input:
+100 999
+Output:
+153 370 371 407
+*//*
+Input:
+10 99
+Output:
+none
+*/

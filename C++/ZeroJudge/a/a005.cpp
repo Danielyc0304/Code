@@ -2,9 +2,9 @@
 using namespace std;
 
 int main(){
-    int num[5], t;
-    int s;
-    int i, j;
+    int num[5], t;//num數字; t數列總數
+    int s;//s計算值
+    int i, j;//i, j旗標
 
     cin>>t;
 
@@ -21,7 +21,16 @@ int main(){
         }
         for(j=0; j<5; ++j)
             cout<<num[j]<<' ';
-        cout<<endl;
+        cout<<endl;//輸出數列
     }
     return 0;
 }
+/*
+Input:
+2
+1 2 3 4
+1 2 4 8
+Output:
+1 2 3 4 5
+1 2 4 8 16
+*/

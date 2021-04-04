@@ -19,7 +19,7 @@ int main(){
         cout<<" quandrant.\n";
     }
     else
-        cout<<"The coordinate point ("<<X<<','<<Y<<") lies at the origin.";//判斷座標位置
+        cout<<"The coordinate point ("<<X<<','<<Y<<") lies at the origin.";//判斷、輸出座標位置
     return 0;
 }
 /*

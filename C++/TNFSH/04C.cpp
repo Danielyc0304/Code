@@ -10,7 +10,7 @@ int main(){
         a=3*a+1;
     else
         a/=2;
-    cout<<a<<endl;//條件判斷
+    cout<<a<<endl;//判斷、輸出數字
 
     return 0;
 }

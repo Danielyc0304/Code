@@ -3,17 +3,26 @@
 using namespace std;
 
 int main(){
-    int n, m;
-    int s, sum=0;
+    int n, m;//n起始數字; m結束數字
+    int sum=0;//sum總和
+    int ans;//ans答案
 
     while(cin>>n>>m){
         sum=n;
         
-        for(s=1; sum<=m; ++s)
-            sum+=n+s;
-        cout<<s<<endl;
-
-        sum=0;
+        for(ans=1; sum<=m; ++ans)
+            sum+=n+ans;
+        cout<<ans<<endl;//輸出結果
     }
     return 0;
 }
+/*
+Input:
+1 5
+5 10
+100 1000
+Output:
+3
+2
+10
+*/

@@ -3,10 +3,10 @@
 using namespace std;
 
 int main(){
-    char a[503][503];
-    int n, m, x, y;
-    int tmpx=0, tmpy=0;
-    int i, j, k;
+    char a[503][503];//a圖案
+    int n, m, x, y;//n圖案邊長; m座標總數; x, y座標
+    int tmpx=0, tmpy=0;//tmpx, tmpy座標暫存值
+    int i, j, k;//i, j, k旗標
     
     memset(a, ' ', sizeof(a));
 

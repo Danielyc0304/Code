@@ -14,7 +14,7 @@ int main(){
     else if(s>=60)
         cout<<"PASS\n";
     else
-        cout<<"FAIL\n";//判斷成績
+        cout<<"FAIL\n";//判斷、輸出結果
     return 0;
 }
 /*

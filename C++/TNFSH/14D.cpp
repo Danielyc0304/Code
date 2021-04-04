@@ -2,8 +2,8 @@
 using namespace std;
 
 int main(){
-    int i, j;//i起始數字, j結束數字
-    int n, tmp;//n次數, tmp暫存值
+    int i, j;//i起始數字; j結束數字
+    int n, tmp;//n次數; tmp暫存值
     int ans=0;//ans答案
 
     while(cin>>i>>j){
@@ -24,7 +24,7 @@ int main(){
         }
         cout<<ans<<endl;//輸出最大次數
 
-        ans=0;
+        ans=0;//初始化
     }
     return 0;
 }

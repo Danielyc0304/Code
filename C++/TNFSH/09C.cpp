@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    int x, num;//x總數, num數字
+    int x, num;//x抽籤次數; num數字
     int c=0;//c計數
     int i;//i旗標
 
@@ -17,7 +17,7 @@ int main(){
     if(c==0)
         cout<<"NO\n";
     else
-        cout<<"YES\n";//判斷數字
+        cout<<"YES\n";//判斷、輸出結果
     return 0;
 }
 /*

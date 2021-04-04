@@ -2,16 +2,16 @@
 #include<sstream>
 using namespace std;
 
-int tmpi1, tmpi2;
-string ans;
+int tmpi1, tmpi2;//tmpi1, tmpi2暫存定位點
+string ans;//ans答案
 
-void sum(char a[]){
-    stringstream ss;
-    string num3;
-    int s=0, num1, num2;
-    int i;
+void addition(char a[]){//加法; a算式
+    stringstream ss;//ss字串串流
+    string num3;//num3數字
+    int s=0, num1, num2;//s計算值; num1, num2數字
+    int i;//i旗標
 
-    for(i=1; tmpi1-i>-1 && tmpi2-i>tmpi1+2; ++i){
+    for(i=1; tmpi1-i>-1 && tmpi2-i>tmpi1+2; ++i){//處理相同位數
         ss<<a[tmpi1-i];
         ss>>num1;
         ss.clear();
@@ -30,7 +30,7 @@ void sum(char a[]){
 
         ans.insert(0, num3);
     }
-    for(; (tmpi1-i>-1 || tmpi2-i>tmpi1+2) || s!=0; ++i){
+    for(; (tmpi1-i>-1 || tmpi2-i>tmpi1+2) || s!=0; ++i){//處理剩餘位數或尚有進位
         if(tmpi1-i>-1)
             ss<<a[tmpi1-i];
         else if(tmpi2-i>tmpi1+2)
@@ -53,13 +53,13 @@ void sum(char a[]){
         ans.insert(0, num3);
     }
 }
-void dif(char a[]){
-    stringstream ss;
-    string num3;
-    int s=0, num1, num2, c=0;
-    int i;
+void Subtraction(char a[]){//減法; a算式
+    stringstream ss;//ss字串串流
+    string num3;//num3數字
+    int s=0, c=0, num1, num2;//s計算值; c計數; num1, num2數字
+    int i;//i旗標
 
-    if(tmpi1==tmpi2-tmpi1-3)
+    if(tmpi1==tmpi2-tmpi1-3)//同位數時判斷大小
 		for(i=0; a[i]!=' '; ++i){
 			ss<<a[i];
 			ss>>num1;
@@ -77,7 +77,7 @@ void dif(char a[]){
 				break;
 			}
 		}
-	for(i=1; tmpi1-i>-1 && tmpi2-i>tmpi1+2; ++i){
+	for(i=1; tmpi1-i>-1 && tmpi2-i>tmpi1+2; ++i){//處理相同位數
 		if(tmpi1>=tmpi2-tmpi1-3 && c==0){
 			ss<<a[tmpi1-i];
 			ss>>num1;
@@ -109,7 +109,7 @@ void dif(char a[]){
 		
 		ans.insert(0, num3);
 	}
-	for(; tmpi1-i>-1 || tmpi2-i>tmpi1+2; ++i){
+	for(; tmpi1-i>-1 || tmpi2-i>tmpi1+2; ++i){//處理剩餘位數
 		if(tmpi1-i>-1)
 			ss<<a[tmpi1-i];
 		else
@@ -142,11 +142,11 @@ void dif(char a[]){
 		ans.insert(0, num3);
 	}
 }
-void pro(char a[]){
-    stringstream ss;
-    string num3;
-    int nump[tmpi2-3]={0}, s=0, num1, num2;
-    int i, j;
+void multiplication(char a[]){//乘法; a算式
+    stringstream ss;//ss字串串流
+    string num3;//num3數字
+    int nump[tmpi2-3]={0}, s=0, num1, num2;//nump數字; s計算值; num1, num2數字
+    int i, j;//i, j旗標
 
     for(i=1; tmpi1-i>-1; ++i){
         ss<<a[tmpi1-i];
@@ -175,13 +175,13 @@ void pro(char a[]){
     for(i=0; ans[i]=='0'; ++i);
     ans.erase(0, i);
 }
-void quo(char a[]){
-    stringstream ss;
-    string num3;
-    int numq[tmpi1], ansq[tmpi1]={0}, s=0, num1, num2, c=0;
-    int i, j;
+void division(char a[]){//除法; a算式
+    stringstream ss;//ss字串串流
+    string num3;//num3數字
+    int numq[tmpi1], ansq[tmpi1]={0}, s=0, c=0, num1, num2;//numq數字; ansq答案; s計算值; c計數; num1, num2數字
+    int i, j;//i, j旗標
 
-    if(tmpi1==tmpi2-tmpi1-3)
+    if(tmpi1==tmpi2-tmpi1-3)//位數相同時判斷大小
         for(i=0; a[i]!=' '; ++i){
             ss<<a[i];
             ss>>num1;
@@ -205,16 +205,16 @@ void quo(char a[]){
             ss>>numq[i];
             ss.clear();
         }
-        for(i=0; i<2*tmpi1-tmpi2+4; ++i){
-            while(c==0){
+        for(i=0; i<2*tmpi1-tmpi2+4; ++i){//做tmpi1-(tmpi2-tmpi1-3)+1=第一個數字位數-第二個數字位數+1次
+            while(c==0){//如果同位數被除數大於除數
                 while(i>0 && numq[i-1]!=0){
-                    for(j=0; j<tmpi2-tmpi1-2; ++j){
+                    for(j=0; j<tmpi2-tmpi1-2; ++j){//如果前一位不為0
                         if(j<tmpi2-tmpi1-3){
                             ss<<a[tmpi2-j-1];
                             ss>>num1;
                             ss.clear();
                         }
-                        else
+                        else//處理借位情況
                             num1=0;
                         numq[tmpi2-tmpi1+i-j-4]-=num1+s;
                         if(numq[tmpi2-tmpi1+i-j-4]<0){
@@ -226,7 +226,7 @@ void quo(char a[]){
                     }
                     ++ansq[i];
                 }
-                for(j=0; j<tmpi2-tmpi1-3; ++j){
+                for(j=0; j<tmpi2-tmpi1-3; ++j){//判斷相同位數被除數和除數的大小
                     ss<<a[tmpi1+j+3];
                     ss>>num1;
                     ss.clear();
@@ -270,8 +270,8 @@ void quo(char a[]){
         ans='0';
 }
 int main(){
-    char a[501];
-    int i;
+    char a[501];//a算式
+    int i;//i旗標
 
     cin.get(a, sizeof(a));
 
@@ -280,15 +280,34 @@ int main(){
     for(i+=3; a[i]!='\0'; ++i);
     tmpi2=i;
 
-    if(a[tmpi1+1]=='+')
-        sum(a);
-    else if(a[tmpi1+1]=='-')
-        dif(a);
-    else if(a[tmpi1+1]=='*')
-        pro(a);
-    else
-        quo(a);
-    cout<<ans<<endl;
+    switch(a[tmpi1+1]){
+        case '+': addition(a); break;
+        case '-': Subtraction(a); break;
+        case '*': multiplication(a); break;
+        default: division(a);
+    }
+    cout<<ans<<endl;//輸出答案
 
     return 0;
 }
+/*
+Input:
+2222222222222222222222222 + 1111111111111111111111111
+Output:
+3333333333333333333333333
+*//*
+Input:
+2222222222222222222222222 - 1111111111111111111111111
+Output:
+1111111111111111111111111
+*//*
+Input:
+2222222222222222222222222 * 1111111111111111111111111
+Output:
+2469135802469135802469135308641975308641975308642
+*//*
+Input:
+2222222222222222222222222 / 1111111111111111111111111
+Output:
+2
+*/

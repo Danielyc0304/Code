@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    int n, x, num;//n總數, x總數, num數字
+    int n, x, num;//n議員總數; x抽籤次數; num數字
     int c=0;//c計數
     int i, j;//i, j旗標
 
@@ -22,8 +22,8 @@ int main(){
         if(c==0)
             cout<<"No\n";
         else
-            cout<<"YES\n";
-        c=0;//判斷數字
+            cout<<"YES\n";//判斷、輸出結果
+        c=0;//初始化
     }
     return 0;
 }

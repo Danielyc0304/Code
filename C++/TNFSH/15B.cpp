@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    int grade[51], N;//grade[51]成績, N總數
+    int grade[50], N;//grade成績; N成績總數
     int c1=0, c2=0, c3=0;//c1, c2, c3計數
     int i;//i旗標
 
