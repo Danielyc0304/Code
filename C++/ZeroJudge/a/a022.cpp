@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
     char a[1000];//a字串
-    int c=0;//c計數
+    int c=0;//c判斷
     int i;//i旗標
 
     while(cin.get(a, sizeof(a))){

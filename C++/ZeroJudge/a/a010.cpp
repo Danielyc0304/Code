@@ -6,7 +6,7 @@ int num[1000];//num質數
 int j=1;//j旗標
 
 void prime(int max){//建立質數表; max最大值
-    int s, c=0;//s計算值; c計數
+    int s, c=0;//s計算值; c判斷
     int i;//i旗標
 
     num[0]=2;//第一個質數為2

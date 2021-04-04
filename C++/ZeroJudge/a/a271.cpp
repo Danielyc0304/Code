@@ -19,7 +19,7 @@ int main(){
         ss<<food;
 
         while(ss>>tmp){
-            m-=c*n;
+            m-=n*c;
 
             if(m<=0){
                 cout<<"bye~Rabbit\n";

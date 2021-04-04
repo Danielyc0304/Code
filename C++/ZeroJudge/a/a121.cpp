@@ -6,7 +6,7 @@ int num[10000], s=3;//num質數; s計算值
 int j=1;//j旗標
 
 void prime(int max){//建立質數表; max最大值
-    int c=0;//c計數
+    int c=0;//c判斷
     int i;//i旗標
 
     for(; s<=sqrt(max); s+=2){
@@ -25,7 +25,7 @@ void prime(int max){//建立質數表; max最大值
 }
 int main(){
     int a, b;//a起始數字; b結束數字
-    int c1=0, c2=0;//c1, c2計數
+    int c1=0, c2=0;//c1判斷; c2計數
     int i;//i旗標
 
     num[0]=2;//第一個質數為2

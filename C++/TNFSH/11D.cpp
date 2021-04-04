@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){
     int n, x, num;//n議員總數; x抽籤次數; num數字
-    int c=0;//c計數
+    int c=0;//c判斷
     int i, j;//i, j旗標
 
     cin>>n;

@@ -6,7 +6,7 @@ int num[44722], s=3;//num質數
 int j=1;//j旗標
 
 void prime(int max){//建立質數表; max最大值
-    int c=0;//c計數
+    int c=0;//c判斷
     int i;//i旗標
     
     for(; s<=sqrt(max); s+=2){//執行到最大值開根號，並以奇數執行

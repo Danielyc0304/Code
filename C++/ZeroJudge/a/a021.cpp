@@ -56,7 +56,7 @@ void addition(char a[]){//加法; a算式
 void Subtraction(char a[]){//減法; a算式
     stringstream ss;//ss字串串流
     string num3;//num3數字
-    int s=0, c=0, num1, num2;//s計算值; c計數; num1, num2數字
+    int s=0, c=0, num1, num2;//s計算值; c判斷; num1, num2數字
     int i;//i旗標
 
     if(tmpi1==tmpi2-tmpi1-3)//同位數時判斷大小
@@ -178,7 +178,7 @@ void multiplication(char a[]){//乘法; a算式
 void division(char a[]){//除法; a算式
     stringstream ss;//ss字串串流
     string num3;//num3數字
-    int numq[tmpi1], ansq[tmpi1]={0}, s=0, c=0, num1, num2;//numq數字; ansq答案; s計算值; c計數; num1, num2數字
+    int numq[tmpi1], ansq[tmpi1]={0}, s=0, c=0, num1, num2;//numq數字; ansq答案; s計算值; c判斷; num1, num2數字
     int i, j;//i, j旗標
 
     if(tmpi1==tmpi2-tmpi1-3)//位數相同時判斷大小

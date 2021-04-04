@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){
     int n, grade;//n成績總數; grade成績
-    int c=0;//c計數
+    int c=0;//c判斷
     int i;//i旗標
 
     cin>>n;

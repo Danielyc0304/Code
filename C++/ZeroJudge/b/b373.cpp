@@ -15,10 +15,41 @@ void merge(int *num, int left, int right){
             tmp[i]=num[L];
             ++L;
         }
-
+        else{
+            tmp[i]=num[R];
+            ++R;
+            ans+=(left+right)/2-L+1;
+        }
+    }
+    for(; L<=(left+right)/2; ++i){
+        tmp[i]=num[L];
+        ++L;
+    }
+    for(; R<=right; ++i){
+        tmp[i]=num[R];
+        ++R;
+    }
+    for(i=0; i<=right-left; ++i)
+        num[i+left]=tmp[i];
+}
+void mergesort(int *num, int left, int right){
+    if(left<right){
+        mergesort(num, left, (left+right)/2);
+        mergesort(num, (left+right)/2+1, right);
+        merge(num, left, right);
     }
 }
 int main(){
+    int num[10000], N;
+    int i;
+
+    cin>>N;
+
+    for(i=0; i<N; ++i)
+        cin>>num[i];
+    mergesort(num, 0, N-1);
+
+    cout<<ans<<endl;
     
     return 0;
 }
