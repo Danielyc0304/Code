@@ -5,7 +5,7 @@ using namespace std;
 int main(){
     string food;//food食物
     int a, x, y, z, w, n, m;//a測資總數; x紅蘿蔔; y白蘿蔔; z黃蘿蔔; w發霉蘿蔔; n中毒; m體重
-    stringstream ss;//s字串串流
+    stringstream ss;//ss字串串流
     int c=0, tmp;//c計數; tmp暫存值
     int i;//i旗標
 
