@@ -2,8 +2,8 @@
 using namespace std;
 
 int main(){
-    int N;
-    int ans=0;
+    int N;//N答對題數
+    int ans=0;//ans答案
 
     cin>>N;
 
@@ -27,7 +27,15 @@ int main(){
     }
     if(N>0)
         ans+=N;
-    cout<<ans<<endl;
+    cout<<ans<<endl;//輸出成績
 
     return 0;
 }
+/*
+Input:
+10
+40
+Output:
+60
+100
+*/

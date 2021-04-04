@@ -3,8 +3,8 @@
 using namespace std;
 
 int main(){
-    int a, b, c;
-    int ans1, ans2;
+    int a, b, c;//a, b, c一元二次方程式三係數
+    int ans1, ans2;//ans1, ans2答案
 
     cin>>a>>b>>c;
 
@@ -18,6 +18,22 @@ int main(){
     else if(b*b-4*a*c==0)
         cout<<"Two same roots x="<<ans1<<endl;
     else
-        cout<<"No real root\n";
+        cout<<"No real root\n";//輸出結果
     return 0;
 }
+/*
+Input:
+1 3 -10
+Output:
+Two different roots x1=2 , x2=-5
+*//*
+Input:
+1 0 0
+Output:
+Two same roots x=0
+*//*
+Input:
+1 1 1
+Output:
+No real root
+*/

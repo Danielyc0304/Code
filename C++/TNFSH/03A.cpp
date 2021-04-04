@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    int n;
+    int n;//n數字
 
     cin>>n;
 
@@ -18,3 +18,14 @@ int main(){
     }
     return 0;
 }
+/*
+Input:
+-2
+Output:
+M
+*//*
+Input:
+3
+Output:
+O
+*/

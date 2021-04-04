@@ -2,9 +2,9 @@
 using namespace std;
 
 int main(){
-    int x;
-    int n=1;
-    int i, j;
+    int x;//x數字
+    int n=1;//n運算
+    int i, j;//i, j旗標
 
     cin>>x;
 
@@ -25,7 +25,27 @@ int main(){
     for(i=1; i<x; ++i){
         for(j=0; j<x-1; ++j)
             cout<<' ';
-        cout<<i<<endl;
+        cout<<i<<endl;//輸出結果
     }
     return 0;
 }
+/*
+Input:
+3
+Output:
+  1
+ 222
+33333
+  1
+  2
+*//*
+Input:
+1
+Output:
+1
+*//*
+Input:
+4
+Output:
+This is a Xmas tree.
+*/

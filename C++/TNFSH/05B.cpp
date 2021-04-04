@@ -2,8 +2,8 @@
 using namespace std;
 
 int main(){
-    int n;
-    double ans=0;
+    int n;//n秒數
+    double ans=0;//ans答案
 
     cin>>n;
 
@@ -46,7 +46,28 @@ int main(){
     }
     if(n>0)
         ans+=5.63*n;
-    cout<<ans<<endl;
+    cout<<ans<<endl;//輸出傷害值
 
     return 0;
 }
+/*
+Input:
+100
+Output:
+210
+*//*
+Input:
+121
+Output:
+255.02
+*//*
+Input:
+2000
+Output:
+RIP!!
+*//*
+Input:
+20000
+Output:
+Get out!!
+*/

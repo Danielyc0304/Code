@@ -3,10 +3,10 @@
 using namespace std;
 
 int main(){
-    int a;
-    stringstream ss;
-    string num;
-    string ans;
+    int a;//a數字
+    stringstream ss;//ss字串串流
+    string num;//num數字
+    string ans;//ans答案
 
     while(cin>>a){
         while(a!=0){
@@ -18,9 +18,20 @@ int main(){
 
             a/=2;
         }
-        cout<<ans<<endl;
+        cout<<ans<<endl;//輸出二進制數字
 
-        ans.clear();
+        ans.clear();//初始化
     }
     return 0;
 }
+/*
+Input:
+3
+Output:
+11
+*//*
+Input:
+6
+Output:
+110
+*/

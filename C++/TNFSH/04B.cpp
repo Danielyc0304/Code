@@ -4,8 +4,8 @@
 using namespace std;
 
 int main(){
-    double a, b, c;
-    double s;
+    double a, b, c;//a, b, c三角形三邊長
+    double s;//s計算值
 
     cin>>a>>b>>c;
 
@@ -25,10 +25,29 @@ int main(){
     else if(a*a+b*b>c*c)
         cout<<"acute\n";
     else
-        cout<<"obtuse\n";
+        cout<<"obtuse\n";//判斷、輸出三角形
     s=(a+b+c)/2;
 
-    cout<<fixed<<setprecision(4)<<sqrt(s*(s-a)*(s-b)*(s-c))<<endl;
+    cout<<fixed<<setprecision(4)<<sqrt(s*(s-a)*(s-b)*(s-c))<<endl;//輸出三角形面積
 
     return 0;
 }
+/*
+Input:
+3 4 5
+Output:
+right
+6.0000
+*//*
+Input:
+6 8 3
+Output:
+obtuse
+7.6444
+*//*
+Input:
+1 1 7
+Output:
+illegal
+unavailable
+*/

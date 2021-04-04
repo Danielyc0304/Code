@@ -40,6 +40,7 @@ void mergesort(int *num, int left, int right){
     }
 }
 int main(){
+<<<<<<< HEAD
     int num[10000], N;
     int i;
 
@@ -51,5 +52,8 @@ int main(){
 
     cout<<ans<<endl;
 
+=======
+    
+>>>>>>> dcbd0637ff40531cb1df271bcda65ccc057f5b4b
     return 0;
 }

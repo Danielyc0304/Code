@@ -3,10 +3,10 @@
 using namespace std;
 
 int main(){
-    char a[501];
-    int n;
-    int tmp;
-    int i;
+    char a[501];//a字串
+    int n;//n平移單位
+    int tmp;//tmp暫存值
+    int i;//i旗標
 
     cin.get(a, sizeof(a));
     cin>>n;
@@ -22,7 +22,18 @@ int main(){
         }
         cout<<(char)tmp;
     }
-    cout<<endl;
+    cout<<endl;//輸出結果
     
     return 0;
 }
+/*
+Input:
+~run for your life!
+Output:
+~twp hqt aqwt nkhg!
+*//*
+Input:
+old soldiers never die. they just fade away.
+Output:
+urj yurjokxy tkbkx jok. znke payz lgjk gcge.
+*/

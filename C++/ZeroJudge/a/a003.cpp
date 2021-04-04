@@ -2,18 +2,25 @@
 using namespace std;
 
 int main(){
-    int M, D;
-    int S;
+    int M, D;//M月; D日
 
     cin>>M>>D;
 
-    S=(M*2+D)%3;
-
-    if(S==0)
-        cout<<"普通\n";
-    else if(S==1)
-        cout<<"吉\n";
-    else
-        cout<<"大吉\n";
+    switch((M*2+D)%3){
+        case 0: cout<<"普通\n"; break;
+        case 1: cout<<"吉\n"; break;
+        default: cout<<"大吉\n";//判斷、輸出運勢
+    }
     return 0;
 }
+/*
+Input:
+1 1
+Output:
+普通
+*//*
+Input:
+1 2
+Output:
+吉
+*/

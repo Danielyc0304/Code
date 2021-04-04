@@ -2,8 +2,8 @@
 using namespace std;
 
 int main(){
-    int n;
-    int ans;
+    int n;//n距離
+    int ans;//ans答案
 
     cin>>n;
 
@@ -16,7 +16,23 @@ int main(){
 
     for(ans=70; n>0; n-=500)
         ans+=5;
-    cout<<ans<<endl;
+    cout<<ans<<endl;//輸出價格
 
     return 0;
 }
+/*
+Input:
+300
+Output:
+70
+*//*
+Input:
+3000
+Output:
+85
+*//*
+Input:
+30000
+Output:
+Sleeping in school
+*/

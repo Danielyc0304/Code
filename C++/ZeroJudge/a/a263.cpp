@@ -1,70 +1,75 @@
 #include<iostream>
 using namespace std;
 
-int a1, a2;
-int num1=0, num2=0;
+int a1, a2;//a1第一個日期年; a2第二個日期年
 
-int judge(int year){
+int judge(int year){//判斷閏年; year年
     if((year%4==0 && year%100!=0) || year%400==0)
-        return 0;
+        return 0;//回傳閏年
     else
-        return 1;
+        return 1;//回傳平年
 }
-void numA(int month, int day){
-    int i;
+int numA(int month, int day){//將第一個日期轉為數字; month月; day日
+    int num=0;//num數字
+    int i;//i旗標
 
     for(i=1; i<month; ++i){
         if(i<=7){
             if(i==2){
-                num1+=28;
+                num+=28;
                 if(judge(a1)==0)
-                    ++num1;
+                    ++num;
             }
             else{
-                num1+=30;
+                num+=30;
                 if(i%2==1)
-                    ++num1;
+                    ++num;
             }
         }
         else{
-            num1+=30;
+            num+=30;
             if(i%2==0)
-                ++num1;
+                ++num;
         }
     }
-    num1+=day;
+    num+=day;
+
+    return num;//回傳數字
 }
-void numB(int year, int month, int day){
-    int i;
+int numB(int year, int month, int day){//將第二個日期轉為數字; year年; month月; day日
+    int num=0;//num數字
+    int i;//i旗標
     
     for(; year<a2; ++year){
-        num2+=365;
+        num+=365;
         if(judge(year)==0)
-            ++num2;
+            ++num;
     }
     for(i=1; i<month; ++i){
         if(i<=7){
             if(i==2){
-                num2+=28;
+                num+=28;
                 if(judge(year)==0)
-                    ++num2;
+                    ++num;
             }
             else{
-                num2+=30;
+                num+=30;
                 if(i%2==1)
-                    ++num2;
+                    ++num;
             }
         }
         else{
-            num2+=30;
+            num+=30;
             if(i%2==0)
-                ++num2;
+                ++num;
         }
     }
-    num2+=day;
+    num+=day;
+
+    return num;//回傳數字
 }
 int main(){
-    int b1, b2, c1, c2;
+    int b1, b2, c1, c2;//b1第一個日期月; b2第二個日期月; c1第一個日期日; c2第二個日期日
 
     while(cin>>a1>>b1>>c1>>a2>>b2>>c2){
         if(a1>a2 || (a1==a2 && b1>b2) || (a1==a2 && b1==b2 && c1>c2)){
@@ -72,12 +77,14 @@ int main(){
             swap(b1, b2);
             swap(c1, c2);
         }
-        numA(b1, c1);
-        numB(a1, b2, c2);
-
-        cout<<num2-num1<<endl;
-
-        num1=0, num2=0;
+        cout<<numB(a1, b2, c2)-numA(b1, c1)<<endl;//輸出日期差
     }
     return 0;
 }
+/*
+Input:
+2011 10 19
+2011 10 18
+Output:
+1
+*/

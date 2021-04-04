@@ -3,8 +3,8 @@
 using namespace std;
 
 int main(){
-    string a;
-    int i;
+    string a;//a字串
+    int i;//i旗標
 
     getline(cin, a);
 
@@ -15,7 +15,18 @@ int main(){
 
     if(a[0]=='\0')
         a='0';
-    cout<<a<<endl;
+    cout<<a<<endl;//輸出反轉字串
 
     return 0;
 }
+/*
+Input:
+12345
+Output:
+54321
+*//*
+Input:
+5050
+Output:
+505
+*/

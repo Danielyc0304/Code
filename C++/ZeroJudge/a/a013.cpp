@@ -1,92 +1,79 @@
 #include<iostream>
 using namespace std;
 
-int num1=0, num2=0;
-int i;
+int i;//i旗標
 
-void num1_conversion(string a){
-    for(i=0; a[i]!=' '; ++i){
-        if(a[i]=='M') num1+=1000;
-        else if(a[i]=='D') num1+=500;
-        else if(a[i]=='C'){
-            if(a[i+1]=='M'){
-                num1+=900;
-                ++i;
+int num1_conversion(string a){//轉換第一個數字; a字串
+    int num=0;
+
+    for(i=0; a[i]!=' '; ++i)
+        switch(a[i]){
+            case 'M': num+=1000; break;
+            case 'D': num+=500; break;
+            case 'C':{
+                switch(a[i+1]){
+                    case 'M': num+=900, ++i; break;
+                    case 'D': num+=400, ++i; break;
+                    default: num+=100;
+                }
+                break;
             }
-            else if(a[i+1]=='D'){
-                num1+=400;
-                ++i;
+            case 'L': num+=50; break;
+            case 'X':{
+                switch(a[i+1]){
+                    case 'C':num+=90, ++i; break;
+                    case 'L':num+=40, ++i; break;
+                    default: num+=10;
+                }
+                break;
             }
-            else num1+=100;
+            case 'V': num+=5; break;
+            default:{
+                switch(a[i+1]){
+                    case 'X': num+=9, ++i; break;
+                    case 'V': num+=4, ++i; break;
+                    default: ++num;
+                }
+            }
         }
-        else if(a[i]=='L') num1+=50;
-        else if(a[i]=='X'){
-            if(a[i+1]=='C'){
-                num1+=90;
-                ++i;
-            }
-            else if(a[i+1]=='L'){
-                num1+=40;
-                ++i;
-            }
-            else num1+=10;
-        }
-        else if(a[i]=='V') num1+=5;
-        else if(a[i]=='I'){
-            if(a[i+1]=='X'){
-                num1+=9;
-                ++i;
-            }
-            else if(a[i+1]=='V'){
-                num1+=4;
-                ++i;
-            }
-            else ++num1;
-        }
-    }
+    return num;//回傳數字
 }
-void num2_conversion(string a){
-    for(++i; a[i]!='\0'; ++i){
-        if(a[i]=='M') num2+=1000;
-        else if(a[i]=='D') num2+=500;
-        else if(a[i]=='C'){
-            if(a[i+1]=='M'){
-                num2+=900;
-                ++i;
+int num2_conversion(string a){//轉換第二個數字; a字串
+    int num=0;
+
+    for(++i; a[i]!='\0'; ++i)
+        switch(a[i]){
+            case 'M': num+=1000; break;
+            case 'D': num+=500; break;
+            case 'C':{
+                switch(a[i+1]){
+                    case 'M': num+=900, ++i; break;
+                    case 'D': num+=400, ++i; break;
+                    default: num+=100;
+                }
+                break;
             }
-            else if(a[i+1]=='D'){
-                num2+=400;
-                ++i;
+            case 'L': num+=50; break;
+            case 'X':{
+                switch(a[i+1]){
+                    case 'C':num+=90, ++i; break;
+                    case 'L':num+=40, ++i; break;
+                    default: num+=10;
+                }
+                break;
             }
-            else num2+=100;
+            case 'V': num+=5; break;
+            default:{
+                switch(a[i+1]){
+                    case 'X': num+=9, ++i; break;
+                    case 'V': num+=4, ++i; break;
+                    default: ++num;
+                }
+            }
         }
-        else if(a[i]=='L') num2+=50;
-        else if(a[i]=='X'){
-            if(a[i+1]=='C'){
-                num2+=90;
-                ++i;
-            }
-            else if(a[i+1]=='L'){
-                num2+=40;
-                ++i;
-            }
-            else num2+=10;
-        }
-        else if(a[i]=='V') num2+=5;
-        else if(a[i]=='I'){
-            if(a[i+1]=='X'){
-                num2+=9;
-                ++i;
-            }
-            else if(a[i+1]=='V'){
-                num2+=4;
-                ++i;
-            }
-            else ++num2;
-        }
-    }
+    return num;//回傳數字
 }
-void output(int num){
+void output(int num){//輸出結果; num數字
     if(num==0)
         cout<<"ZERO";
     for(; num>=1000; num-=1000)
@@ -142,15 +129,21 @@ void output(int num){
     cout<<endl;
 }
 int main(){
-    string a;
+    string a;//a羅馬數字
 
     while(getline(cin, a)){
         if(a[0]=='#')
             break;
-        num1_conversion(a), num2_conversion(a);
-        output(abs(num1-num2));
-
-        num1=0, num2=0;
+        output(abs(num1_conversion(a)-num2_conversion(a)));//輸出結果
     }
     return 0;
 }
+/*
+Input:
+I I
+MM II
+#
+Output:
+ZERO
+MCMXCVIII
+*/

@@ -2,9 +2,9 @@
 using namespace std;
 
 int main(){
-    int n;
-    int ans=0;
-    int i;
+    int n;//n數字
+    int ans=0;//ans答案
+    int i;//i旗標
 
     cin>>n;
 
@@ -14,6 +14,17 @@ int main(){
     if(ans==0)
         cout<<"XD\n";
     else
-        cout<<ans<<endl;
+        cout<<ans<<endl;//輸出因數和
     return 0;
 }
+/*
+Input:
+32
+Output:
+30
+*//*
+Input:
+23
+Output:
+XD
+*/

@@ -2,8 +2,8 @@
 using namespace std;
 
 int main(){
-    int n;
-    int i;
+    int n;//n數字
+    int i;//i旗標
 
     cin>>n;
 
@@ -13,7 +13,13 @@ int main(){
         else
             n/=2;
     }
-    cout<<i-1<<endl;
+    cout<<i-1<<endl;//輸出次數
 
     return 0;
 }
+/*
+Input:
+22
+Output:
+16
+*/

@@ -2,8 +2,8 @@
 using namespace std;
 
 int main(){
-    int a, b, c;
-    double s;
+    int a, b, c;//a, b, c成績
+    double s;//s計算值
 
     cin>>a>>b>>c;
 
@@ -14,6 +14,14 @@ int main(){
     else if(s>=60)
         cout<<"PASS\n";
     else
-        cout<<"FAIL\n";
+        cout<<"FAIL\n";//判斷、輸出結果
     return 0;
 }
+/*
+Input:
+150
+280
+96
+Output:
+BS
+*/

@@ -2,9 +2,9 @@
 using namespace std;
 
 int main(){
-    int grade[51], N;
-    int c1=0, c2=0, c3=0;
-    int i;
+    int grade[50], N;//grade成績; N成績總數
+    int c1=0, c2=0, c3=0;//c1, c2, c3計數
+    int i;//i旗標
 
     cin>>N;
 
@@ -18,7 +18,16 @@ int main(){
         else
             ++c3;
     }
-    cout<<c1<<endl<<c2-1<<endl<<c3<<endl;
+    cout<<c1<<endl<<c2-1<<endl<<c3<<endl;//輸出比第一項低、同分、高的人數
 
     return 0;
 }
+/*
+Input:
+10
+42 71 63 73 1 52 8 40 38 88
+Output:
+4
+0
+5
+*/
