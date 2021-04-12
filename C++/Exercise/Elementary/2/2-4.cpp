@@ -42,7 +42,7 @@ void quicksort(int *num, int left, int right){
         quicksort(num, j+1, right);
     }
 }
-int main(){
+int main(){//快速排序
     int num[Size];
     int i;
 

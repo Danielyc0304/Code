@@ -49,7 +49,7 @@ void mergesort(int *num, int left, int right){
         print(num, Size);
     }
 }
-int main(){
+int main(){//合併排序
     int num[Size];
     int i;
 

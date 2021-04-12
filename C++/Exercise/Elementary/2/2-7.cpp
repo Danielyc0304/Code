@@ -17,7 +17,7 @@ bool cmp(Data a, Data b){
         return a.eng>b.eng;
     return a.chi>b.chi;
 }
-int main(){
+int main(){//多鍵值排序
     Data a[Size];
     int i;
 

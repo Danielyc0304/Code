@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//區域變數與動態變數範例
     int a[100000], *b;
     b=new int(100000);
 

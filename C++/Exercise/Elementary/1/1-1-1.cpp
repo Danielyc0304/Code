@@ -2,7 +2,7 @@
 #include<sstream>
 using namespace std;
 
-int main(){
+int main(){//找出所有英文單字
     string a, tmp;
     stringstream ss;
     int i;
@@ -22,6 +22,3 @@ int main(){
     }
     return 0;
 }
-/*
-No cross, no crown.
-*/

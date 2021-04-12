@@ -5,7 +5,7 @@ using namespace std;
 
 #define MAX 100
 
-int main(){
+int main(){//定義常數
     const double PI=acos(-1.0);
     int num[MAX];
     int i;

@@ -11,7 +11,7 @@ void print(int num[], int size){
         cout<<num[i]<<' ';
     cout<<endl;
 }
-int main(){
+int main(){//氣泡排序
     int num[Size], tmp;
     int i, j;
 

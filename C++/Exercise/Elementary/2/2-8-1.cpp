@@ -5,8 +5,8 @@ using namespace std;
 bool cmp(int a, int b){
     return a<b;
 }
-int main(){
-    int score[21], n;
+int main(){//成績指標(10503第1題)
+    int score[20], n;
     int ans1=-1, ans2=-1;
     int i;
 

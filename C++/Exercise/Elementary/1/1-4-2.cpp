@@ -2,7 +2,7 @@
 #include<cstring>
 using namespace std;
 
-struct stu{
+struct stu{//memcpy範例
     char name[40];
     int math;
     int en;

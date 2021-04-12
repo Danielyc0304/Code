@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//位元運算範例
     int a=0b01001101;
     int b=0b00100110;
 

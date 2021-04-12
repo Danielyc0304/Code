@@ -2,7 +2,7 @@
 #include<cstring>
 using namespace std;
 
-int main(){
+int main(){//memcmp範例
     char a[11]="I love C++";
     char b[12]="I love Java";
 

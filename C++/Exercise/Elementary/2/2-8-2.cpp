@@ -6,14 +6,15 @@ typedef struct data{
     int a;
     int b;
 }Data;
-Data num[10001];
+
+Data num[10000];
 
 bool cmp(Data a, Data b){
     if(a.a==b.a)
         return a.b>b.b;
     return a.a<b.a;
 }
-int main(){
+int main(){//線段覆蓋長度(10503第3題)
     int n;
     int tmp1, tmp2;
     int ans=0;

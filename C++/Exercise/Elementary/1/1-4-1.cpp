@@ -2,7 +2,7 @@
 #include<cstring>
 using namespace std;
 
-int main(){
+int main(){//memset範例
     int num[100];
     int i;
     

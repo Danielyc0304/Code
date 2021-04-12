@@ -18,7 +18,7 @@ void print(int num[], int size){
         cout<<num[i]<<' ';
     cout<<endl;
 }
-int main(){
+int main(){//利用STL進行排序
     int num[Size];
     int i;
 
