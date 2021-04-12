@@ -3,23 +3,34 @@
 using namespace std;
 
 int main(){
-    vector<int> num;
-    int N, M, K;
-    int eli=0;
-    int i, j;
+    vector<int> num;//num數字
+    int N, M, K;//N
+    int eli=0;//eli被淘汰的人
+    int i, j;//i, j旗標
 
     cin>>N>>M>>K;
 
     for(i=1; i<=N; ++i)
-        num.push_back(i);
+        num.push_back(i);//輸入數字
     for(i=0; i<K; ++i){
         eli=(eli+M-1)%num.size();
 
-        num.erase(num.begin()+eli);
+        num.erase(num.begin()+eli);//淘汰
     }
-    if(num.size()==1 || eli==num.size())
+    if(num.size()==1 || eli==num.size())//如果剩一位或被淘汰的下一位沒有人
         cout<<num[0];
     else
         cout<<num[eli];
     return 0;
 }
+/*
+Input:
+5 2 4
+Output:
+3
+*//*
+Input:
+8 3 6
+Output:
+4
+*/

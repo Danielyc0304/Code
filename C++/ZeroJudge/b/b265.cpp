@@ -21,7 +21,7 @@ int main(){
 
             for(j=0; j<5; ++j)
                 num2+=to_string(num1[j]);//轉換int為string
-            com[num2]+=1;//在num2為索引的數值加一
+            com[num2]+=1;//在num2為索引的數值+1
 
             num2.clear();//初始化
         }

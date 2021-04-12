@@ -2,23 +2,23 @@
 #include<vector>
 using namespace std;
 
-vector<int> num;
-int used[50001]={0};
-int ans=0;
-int i;
+vector<int> num;//num好友編號
+int used[50000]={0};//used已經被處理過的人
+int ans=0;//ans答案
 
-void group(int node){
-    if(used[node]!=0){
+void group(int node){//尋找團體; node節點
+    if(used[node]!=0){//如果已經找到完整的團體
         ++ans;
 
         return;
     }
     used[node]=1;
 
-    group(num[node]);
+    group(num[node]);//尋找該位的好友
 }
 int main(){
-    int N, fri;
+    int N, fri;//N人數; fri朋友
+    int i;//i旗標
 
     cin>>N;
 
@@ -27,9 +27,22 @@ int main(){
         num.push_back(fri);
     }
     for(i=0; i<N; ++i)
-        if(used[i]==0)
+        if(used[i]==0)//如果還沒被處理
             group(i);
-    cout<<ans<<endl;
+    cout<<ans<<endl;//輸出團體個數
 
     return 0;
 }
+/*
+Input:
+10
+4 7 2 9 6 0 8 1 5 3
+Output:
+4
+*//*
+Input:
+3
+0 2 1
+Output:
+2
+*/
