@@ -6,7 +6,7 @@ int main(){
     vector<vector<int>> num;//num數字
     vector<int> tmp;//tmp暫存值
     int N, act, a;//N邊長; act動作; a數字
-    int dir[5][2]={{0, -1}, {-1, 0}, {0, 1}, {1, 0}, {0, -1}};//dir方向，第1項與第5項重複是為了判斷
+    int dir[5][2]={{0, -1}, {-1, 0}, {0, 1}, {1, 0}, {0, -1}};//dir方向，第一項與第五項重複是為了判斷
     int i, j;//i, j旗標
 
     cin>>N>>act;
