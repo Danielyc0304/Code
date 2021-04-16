@@ -18,7 +18,7 @@ void print(int num[], int size){//輸出; num數字; size大小
         cout<<num[i]<<' ';
     cout<<endl;//輸出數字
 }
-int main(){//利用STL進行排序
+int main(){//利用STL進行排序，演算法效率為O(nlog(n))
     int num[Size];//num數字
     int i;//i旗標
 

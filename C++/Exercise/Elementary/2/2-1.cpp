@@ -11,7 +11,7 @@ void print(int num[], int size){//輸出; num數字; size大小
         cout<<num[i]<<' ';
     cout<<endl;//輸出數字
 }
-int main(){//氣泡排序，總次數為n^n/2、演算法效率為O(n^n)
+int main(){//氣泡排序，總次數為n^n/2、演算法效率為O(n^2)
     int num[Size], tmp;//num數字; tmp暫存值
     int i, j;//i, j旗標
 

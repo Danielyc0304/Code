@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
     vector<int> num;//num數字
-    int N, M, K;//N
+    int N, M, K;//N人數; M淘汰間隔; K淘汰人數
     int eli=0;//eli被淘汰的人
     int i, j;//i, j旗標
 

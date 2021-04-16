@@ -30,7 +30,7 @@ void quicksort(int *num, int left, int right){//排序; num數字; left左邊界
             while((j>0) && (num[--j]>num[left]));//由後往前，尋找比第一個數小的值
 
             if(i>=j)//如果大的數字在右邊
-                break;//停止
+                break;
             swap(&num[i], &num[j]);//交換數字
         }
         swap(&num[left], &num[j]);//與第一個數交換
@@ -42,7 +42,7 @@ void quicksort(int *num, int left, int right){//排序; num數字; left左邊界
         quicksort(num, j+1, right);//以第一個數的現在位置為基準，分割成左半部與右半部
     }
 }
-int main(){//快速排序，演算法效率為O(nlog(n))，暫存記憶體空間為O(n)
+int main(){//快速排序， 演算法效率為O(nlog(n))，暫存記憶體空間為O(log(n))
     int num[Size];//num數字
     int i;//i旗標
 
