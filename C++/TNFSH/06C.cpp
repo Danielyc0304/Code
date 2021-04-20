@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//[簡單版]因數列舉
     int n;//n數字
     int i;//i旗標
 

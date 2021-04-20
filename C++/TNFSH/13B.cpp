@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//願天下有情人終成父母
     int N;//N數字
 
     cin>>N;

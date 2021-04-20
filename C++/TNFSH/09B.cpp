@@ -2,7 +2,7 @@
 #include<iomanip>
 using namespace std;
 
-int main(){
+int main(){//全班某科成績計算
     int n, grade;//n成績總數; grade成績
     double ans=0;//ans答案
     int i;//i旗標

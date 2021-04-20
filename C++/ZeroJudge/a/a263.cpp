@@ -3,11 +3,11 @@ using namespace std;
 
 int a1, a2;//a1第一個日期年; a2第二個日期年
 
-int judge(int year){//判斷閏年; year年
+bool leap_year(int year){//判斷閏年; year年
     if((year%4==0 && year%100!=0) || year%400==0)
-        return 0;//回傳閏年
+        return true;//回傳閏年
     else
-        return 1;//回傳平年
+        return false;//回傳平年
 }
 int numA(int month, int day){//將第一個日期轉為數字; month月; day日
     int num=0;//num數字
@@ -17,7 +17,7 @@ int numA(int month, int day){//將第一個日期轉為數字; month月; day日
         if(i<=7){
             if(i==2){
                 num+=28;
-                if(judge(a1)==0)
+                if(leap_year(a1)==1)
                     ++num;
             }
             else{
@@ -42,14 +42,14 @@ int numB(int year, int month, int day){//將第二個日期轉為數字; year年
     
     for(; year<a2; ++year){
         num+=365;
-        if(judge(year)==0)
+        if(leap_year(year)==1)
             ++num;
     }
     for(i=1; i<month; ++i){
         if(i<=7){
             if(i==2){
                 num+=28;
-                if(judge(year)==0)
+                if(leap_year(year)==1)
                     ++num;
             }
             else{

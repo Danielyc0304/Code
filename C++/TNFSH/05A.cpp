@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//Wolfy in taxi
     int n;//n距離
     int ans;//ans答案
 

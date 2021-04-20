@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//奇偶問題
     int n, num;//n數字總數; num數字
     int c=0;//c判斷
     int i;//i旗標

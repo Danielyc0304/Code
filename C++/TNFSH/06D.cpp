@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//鞭在手，問天下誰是英雄？
     int m, n;//m功力值; n鞭數
     int i;//i旗標
 

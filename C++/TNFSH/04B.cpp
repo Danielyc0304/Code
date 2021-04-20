@@ -3,7 +3,7 @@
 #include<iomanip>
 using namespace std;
 
-int main(){
+int main(){//三角形判斷
     double a, b, c;//a, b, c三角形三邊長
     double s;//s計算值
 
@@ -20,11 +20,11 @@ int main(){
 
         return 0;
     }
-    if(a*a+b*b==c*c)
+    if(a*a+b*b==c*c)//如果為直角三角形
         cout<<"right\n";
-    else if(a*a+b*b>c*c)
+    else if(a*a+b*b>c*c)//如果為銳角三角形
         cout<<"acute\n";
-    else
+    else//如果為鈍角三角形
         cout<<"obtuse\n";//判斷、輸出三角形
     s=(a+b+c)/2;
 

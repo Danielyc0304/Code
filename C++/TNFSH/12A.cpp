@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//向偉大的發明-沙漏-致敬
     int X;//X數字
     int n;//n運算
     int i, j;//i, j旗標

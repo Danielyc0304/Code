@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//Xmas tree
     int x;//x數字
     int n=1;//n運算
     int i, j;//i, j旗標

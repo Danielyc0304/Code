@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//Holy Grail
 	int x;//x數字
 	int n=1, m;//n, m運算
 	int i, j;//i, j旗標

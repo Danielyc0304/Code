@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//XY coordinate system
     int X, Y;//X, Y座標
 
     cin>>X>>Y;

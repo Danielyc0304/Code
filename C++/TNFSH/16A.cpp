@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//點名系統實作
     int people[45], a, b, c;//people出缺席; a全班人數; b出席人數; c出席人
     int i;//i旗標
 

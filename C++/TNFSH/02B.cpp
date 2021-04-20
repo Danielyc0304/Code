@@ -3,7 +3,7 @@
 #include<iomanip>
 using namespace std;
 
-int main(){
+int main(){//一元二次方程式求解[基本變數輸入輸出]
     int a, b, c;//a, b, c一元二次方程式三係數
     double s;//s計算值
 

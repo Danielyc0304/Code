@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//很大很大的N!
     int n;//n結束數字
     long long int ans=1;//ans答案
     int i;//i旗標

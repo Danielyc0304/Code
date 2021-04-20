@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//市政質詢抽抽樂
     int x, num;//x抽籤次數; num數字
     int c=0;//c判斷
     int i;//i旗標

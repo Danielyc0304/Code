@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//Sigma
     int x;//x數字
     int ans=0;//ans答案
     int i;//i旗標

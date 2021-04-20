@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//高雄發大財
     int n, x, num;//n議員總數; x抽籤次數; num數字
     int c=0;//c判斷
     int i, j;//i, j旗標

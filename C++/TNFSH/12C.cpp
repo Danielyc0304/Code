@@ -2,7 +2,7 @@
 #include<iomanip>
 using namespace std;
 
-int main(){
+int main(){//庶民炒房聖經
     int x, a, b;//x投資次數; a成本; b售價
     double ans=0;//ans答案
     int i;//i旗標

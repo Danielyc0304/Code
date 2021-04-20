@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//The 3n+1 problem (ACM100)
     int i, j;//i起始數字; j結束數字
     int n, tmp;//n次數; tmp暫存值
     int ans=0;//ans答案

@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//Little Star V2.0
     int n;//n數字
     int i, j;//i, j旗標
 

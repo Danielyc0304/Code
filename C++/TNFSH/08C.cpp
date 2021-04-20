@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//You shall not pass!!
     int n, grade;//n成績總數; grade成績
     int c=0;//c判斷
     int i;//i旗標

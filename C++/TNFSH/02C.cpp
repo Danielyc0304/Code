@@ -3,7 +3,7 @@
 #include<iomanip>
 using namespace std;
 
-int main(){
+int main(){//自由落體計算機[基本變數輸入輸出]
     int h;//h高度
 
     cin>>h;

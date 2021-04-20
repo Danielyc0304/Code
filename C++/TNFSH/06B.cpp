@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//溫度轉換
     int n, m;//n起始溫度; m結束溫度
 
     cin>>n>>m;

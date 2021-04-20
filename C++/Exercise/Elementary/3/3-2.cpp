@@ -2,7 +2,7 @@
 #include<cstring>
 using namespace std;
 
-int main(){
+int main(){//服務顧客(模擬時間的進行)
     int a[199], b[199], t, n;//a客人到達時間; b客人服務時間; t店員上班時間; n客人數
     int ser[599]={0}, s=0;//ser服務時間; s計算值
     int ans=0;//ans答案

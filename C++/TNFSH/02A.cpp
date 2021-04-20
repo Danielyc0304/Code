@@ -3,7 +3,7 @@
 #include<iomanip>
 using namespace std;
 
-int main(){
+int main(){//三角形面積求解[基本變數輸入輸出]
     double a, b, c;//a, b, c三角形三邊長
     double s;//s計算值
 

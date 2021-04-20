@@ -4,7 +4,7 @@ using namespace std;
 
 #define Size 101
 
-int main(){
+int main(){//淘汰遊戲(使用陣列紀錄狀態)
     bool a[Size]={0};//a是否被淘汰
     int n, p;//n人數; p淘汰間隔
     int eli=0, c=0;//eli淘汰人數; c計數

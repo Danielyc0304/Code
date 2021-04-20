@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//因數和
     int n;//n數字
     int ans=0;//ans答案
     int i;//i旗標

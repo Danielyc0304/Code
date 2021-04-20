@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//所有位數和
     long long int N;//N數字
     int ans=0;//ans答案
 

@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//3n+1 problem 簡易版 (改編自ACM100)
     int n;//n數字
     int i;//i旗標
 

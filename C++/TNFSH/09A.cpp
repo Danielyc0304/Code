@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//費氏數列
     int n;//n項數
     long int s1=0, s2=1, tmp;//s1, s2計算值; tmp暫存值
     int i;//i旗標

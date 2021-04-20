@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//市容美化大作戰
     int r, m, n;//r路長; m樹木間距; n路燈間距
     int i, j;//i, j旗標
 

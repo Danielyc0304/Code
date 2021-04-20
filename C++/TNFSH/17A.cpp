@@ -2,7 +2,7 @@
 #include<cstring>
 using namespace std;
 
-int main(){
+int main(){//軍令傳遞
     char a[501];//a字串
     int n;//n平移單位
     int tmp;//tmp暫存值

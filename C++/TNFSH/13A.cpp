@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//一路存到掛
     int price;//price價錢
     int ans=0;//ans答案
     int i;//i旗標

@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//number tree
     int n;//n數字
     int m=1;//m運算
     int i;//i旗標

@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//A patter of 0's surrounded by *'s
     int a, b;//a, b數字
     int i, j;//i, j旗標
 

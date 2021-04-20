@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//Lucky Seven
     int n;//n數字
     long long int s=7;//s計算值
     long long int ans=0;//ans答案

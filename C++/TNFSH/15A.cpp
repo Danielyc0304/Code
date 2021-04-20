@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//Final Countdown
     int num[40], N;//num數字; N數字總數
     int i;//i旗標
 

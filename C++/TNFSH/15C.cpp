@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//班級成績統計
     int grade[200], N;//grade成績; N成績總數
     int sum=0, max=0, min=100;//sum總和; max最大值; min最小值
     int i;//i旗標

@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//揪團綉學號
     int n, s;//n人數; s起始號碼
     int i;//i旗標
 

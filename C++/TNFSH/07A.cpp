@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//兩數間的和
     int x, y;//x起始數字; y結束數字
     long int ans=0;//ans答案
 

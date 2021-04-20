@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//分數計算與結果判斷
     int a, b, c;//a, b, c成績
     double s;//s計算值
 

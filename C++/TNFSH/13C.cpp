@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//如何以WHILE解數學式子
     int m;//m數字
     int s=0;//s計算值
     int ans;//ans答案

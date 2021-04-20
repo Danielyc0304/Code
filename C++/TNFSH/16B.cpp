@@ -2,7 +2,7 @@
 #include<iomanip>
 using namespace std;
 
-int main(){
+int main(){//成績統計圖表製作
     int grade[100], n;//grade成績; n成績
     int c1=0, c2=0, c3=0, c4=0, c5=0, max=0, maxi;//c1, c2, c3, c4, c5計數; max最大值; maxi最大值項數
     double sum=0;//sum總和

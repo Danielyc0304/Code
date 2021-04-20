@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//簡單的體積計算[輸入/輸出]
     int a, b;//a半徑; b高
 
     cin>>a>>b;

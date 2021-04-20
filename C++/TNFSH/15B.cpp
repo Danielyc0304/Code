@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//名次於我如浮雲
     int grade[50], N;//grade成績; N成績總數
     int c1=0, c2=0, c3=0;//c1, c2, c3計數
     int i;//i旗標

@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//簡單的成績計算[輸入/輸出]
     int a, b;//a, b成績
 
     cin>>a>>b;

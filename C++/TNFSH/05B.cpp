@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//史上最強掌法
     int n;//n秒數
     double ans=0;//ans答案
 

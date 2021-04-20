@@ -3,16 +3,16 @@
 using namespace std;
 
 vector<int> num;//num好友編號
-int used[50000]={0};//used已經被處理過的人
+int use[50000]={0};//use已經被處理過的人
 int ans=0;//ans答案
 
 void group(int node){//尋找團體; node節點
-    if(used[node]!=0){//如果已經找到完整的團體
+    if(use[node]!=0){//如果已經找到完整的團體
         ++ans;
 
         return;
     }
-    used[node]=1;
+    use[node]=1;
 
     group(num[node]);//尋找該位的好友
 }
@@ -27,7 +27,7 @@ int main(){
         num.push_back(fri);
     }
     for(i=0; i<N; ++i)
-        if(used[i]==0)//如果還沒被處理
+        if(use[i]==0)//如果還沒被處理
             group(i);
     cout<<ans<<endl;//輸出團體個數
 
