@@ -3,7 +3,7 @@
 #include<vector>
 using namespace std;
 
-int main(){
+int main(){//線段覆蓋長度
     vector<pair<int, int>> num;//num線段範圍
     int N, a, b;//N線段總數; a線段起始點; b線段結束點
     int ans=0;//ans答案

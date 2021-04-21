@@ -269,7 +269,7 @@ void division(char a[]){//除法; a算式
     else
         ans='0';
 }
-int main(){
+int main(){//大數運算
     char a[501];//a算式
     int i;//i旗標
 

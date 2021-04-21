@@ -2,7 +2,7 @@
 #include<algorithm>
 using namespace std;
 
-int main(){
+int main(){//成績指標
     int grade[20], a;//grade成績; a成績總數
     int i;//i旗標
 

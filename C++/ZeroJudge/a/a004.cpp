@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//文文的求婚
     int a;//a年
 
     while(cin>>a){

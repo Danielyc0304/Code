@@ -2,7 +2,7 @@
 #include<cmath>
 using namespace std;
 
-int main(){
+int main(){//完全平方和
     int T, a, b;//T測資總數; a起始數字; b結束數字
     int ans=0;//ans答案
     int i;//i旗標

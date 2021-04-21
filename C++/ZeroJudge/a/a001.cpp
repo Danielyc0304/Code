@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//哈囉
     string a;//a字串
 
     getline(cin, a);

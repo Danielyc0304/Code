@@ -32,9 +32,9 @@ void DFS(int sum, int i){//深度優先搜尋; sum總和; i旗標
     ++j;//答案輸入往前一個
 
     DFS(sum+num[i+1], i+1);//下一項數字
-    DFS(sum+num[i+1]-num[i], i+1);//撿掉自己後，下一項數字
+    DFS(sum+num[i+1]-num[i], i+1);//減掉自己後，下一項數字
 }
-int main(){
+int main(){//求和問題
     int i;//i旗標
 
     cin>>n>>m;

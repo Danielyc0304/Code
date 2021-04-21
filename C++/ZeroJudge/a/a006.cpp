@@ -2,7 +2,7 @@
 #include<cmath>
 using namespace std;
 
-int main(){
+int main(){//一元二次方程式
     int a, b, c;//a, b, c一元二次方程式三係數
     int ans1, ans2;//ans1, ans2答案
 

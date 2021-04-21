@@ -2,7 +2,7 @@
 #include<iomanip>
 using namespace std;
 
-int main(){
+int main(){//解方程
     int a, b, c, d, e, f;//a, b, c二元一次方程式第一條係數; d, e, f二元一次方程式第二條係數
     double num1, num2, num3;//num1, num2, num3數字
 

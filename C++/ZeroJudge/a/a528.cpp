@@ -21,7 +21,7 @@ bool cmp2(string a, string b){//正數排序規則; a, b字串
                 return a[i]<b[i];//數字小的在前面
     return a.length()<b.length();//長度短的在前面
 }
-int main(){
+int main(){//大數排序
     vector<string> num1, num2;//num1負數; num2正數
     string tmp;//tmp數字
     int N;//N數字總數

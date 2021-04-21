@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//位元運算之進位篇
     int N;//N數字
     int ans=0;//ans答案
 

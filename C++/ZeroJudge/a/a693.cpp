@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//吞食天地
     int num[100000], n, m, l, r;//num數字; n數字總數; m吃的總數; l, r吃的範圍
     int sum[100000]={0};//sum總和
     int i;//i旗標

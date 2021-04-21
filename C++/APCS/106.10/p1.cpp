@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//邏輯運算子
     int a, b, c;//a, b數字; c目標
     int count=0;//count判斷
 

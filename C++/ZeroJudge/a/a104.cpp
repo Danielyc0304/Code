@@ -2,7 +2,7 @@
 #include<algorithm>
 using namespace std;
 
-int main(){
+int main(){//排序
     int num[1000], n;//num數字; n數字總數
     int i;//i旗標
 

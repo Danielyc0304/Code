@@ -39,7 +39,7 @@ int DFS(int node){//深度優先搜尋; node節點
 
 	return max1;//回傳第一遠距離
 }
-int main(){
+int main(){//血緣關係
 	int n, a, b;//n人數; a, b同時輸入，b為a的小孩
 	int child[100000]={0}, rdis;//child是否為小孩; rdis從根節點的最遠距離
 	int i;//i旗標

@@ -23,7 +23,7 @@ void prime(int max){//建立質數表; max最大值
         c=0;//初始化
     }
 }
-int main(){
+int main(){//質數又來囉
     int a, b;//a起始數字; b結束數字
     int c1=0, c2=0;//c1判斷; c2計數
     int i;//i旗標

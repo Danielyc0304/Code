@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//MOD3
     int n, num;//n數字總數; num數字
     int c1=0, c2=0, c3=0;//c1, c2, c3計數
     int i;//i旗標

@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//簡易加法
     int a, b;//a, b數字
 
     cin>>a>>b;

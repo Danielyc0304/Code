@@ -3,7 +3,7 @@
 #include<cstring>
 using namespace std;
 
-int main(){
+int main(){//螺旋矩陣
     int T, N, M;//T測資總數; N大小; M方向
     int num[100][100]={0}, dir[4][2]={{0, 1}, {1, 0}, {0, -1}, {-1, 0}}, s=1;//num數字; dir方向; s計算值
     int i, j=0, k=0, l;//i, j, k, l旗標

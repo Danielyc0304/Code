@@ -2,7 +2,7 @@
 #include<vector>
 using namespace std;
 
-int main(){
+int main(){//數字龍捲風
     vector<vector<int>> num;//num數字
     vector<int> tmp;//tmp暫存值
     int N, act, a;//N邊長; act動作; a數字

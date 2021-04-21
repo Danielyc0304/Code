@@ -2,7 +2,7 @@
 #include<cmath>
 using namespace std;
 
-int main(){
+int main(){//明明愛數數
     int n, m;//n起始數字; m結束數字
     int sum=0;//sum總和
     int ans;//ans答案

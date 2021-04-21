@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//空間切割
     int n;//n直線數
     int s=1;//s計算值
     int ans=1;//ans答案

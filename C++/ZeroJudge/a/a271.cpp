@@ -2,7 +2,7 @@
 #include<sstream>
 using namespace std;
 
-int main(){
+int main(){//彩色蘿蔔
     string food;//food食物
     int a, x, y, z, w, n, m;//a測資總數; x紅蘿蔔; y白蘿蔔; z黃蘿蔔; w發霉蘿蔔; n中毒; m體重
     stringstream ss;//ss字串串流

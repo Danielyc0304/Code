@@ -2,7 +2,7 @@
 #include<cstring>
 using namespace std;
 
-int main(){
+int main(){//迴文
     char a[1000];//a字串
     int c=0;//c判斷
     int i;//i旗標

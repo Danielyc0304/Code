@@ -2,7 +2,7 @@
 #include<algorithm>
 using namespace std;
 
-int main(){
+int main(){//數字翻轉
     string a;//a字串
     int i;//i旗標
 

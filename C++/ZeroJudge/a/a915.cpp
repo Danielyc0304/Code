@@ -3,7 +3,7 @@
 #include<vector>
 using namespace std;
 
-int main(){
+int main(){//二维点排序
     vector<pair<int, int>> num;//num座標
     int n, x, y;//n座標總數; x, y座標
     int i;

@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//新手訓練 ~ for + if
     int N, a;//N測資總數; a運算符
     long int b, c;//b, c數字
     int i;//i旗標

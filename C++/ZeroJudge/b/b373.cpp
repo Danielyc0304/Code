@@ -39,7 +39,7 @@ void mergesort(int *num, int left, int right){//分割、排序; num數字; left
         merge(num, left, right);//排序
     }
 }
-int main(){
+int main(){//[福州19中]车厢重组
     int num[10000], N;//num數字, N數字總數
     int i;//i旗標
 

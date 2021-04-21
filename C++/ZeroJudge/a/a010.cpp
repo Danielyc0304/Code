@@ -25,7 +25,7 @@ void prime(int max){//建立質數表; max最大值
         c=0;
     }
 }
-int main(){
+int main(){//因數分解
     int a;//a數字
     int c=0;//c計數
     int i;//i旗標

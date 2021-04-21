@@ -11,7 +11,7 @@ long int g(int n){//遞迴; n天數
         return 0;
     return f(n)+g(n-1);
 }
-int main(){
+int main(){//數數愛明明
     int n;//n天數
 
     while(cin>>n)

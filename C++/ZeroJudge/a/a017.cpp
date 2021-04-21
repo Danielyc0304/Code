@@ -216,7 +216,7 @@ string outside(string a){//處理剩餘的; a算式
     }
     return a;//回傳答案
 }
-int main(){
+int main(){//五則運算
     string a;//a算式
 
     while(getline(cin, a))

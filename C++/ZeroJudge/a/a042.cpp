@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//平面圓形切割
     int n;//n圓形數
 
     while(cin>>n)

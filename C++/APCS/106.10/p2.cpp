@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//交錯字串
     string a;//a字串
     int k;//k交錯字串長度
     int pre, c=0 ,tmp=0;//pre前一位是大寫或小寫; c判斷; tmp暫存值

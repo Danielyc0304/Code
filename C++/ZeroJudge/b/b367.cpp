@@ -2,7 +2,7 @@
 #include<algorithm>
 using namespace std;
 
-int main(){
+int main(){//翻轉世界
     int num[10][10], T, N, M;//num數字; T測資總數; N長; M寬
     int tmp[10], c=0;//tmp暫存值; c判斷
     int i, j, k;//i, j, k旗標

@@ -128,7 +128,7 @@ void output(int num){//輸出結果; num數字
     }
     cout<<endl;
 }
-int main(){
+int main(){//羅馬數字
     string a;//a羅馬數字
 
     while(getline(cin, a)){

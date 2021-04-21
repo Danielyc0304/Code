@@ -16,7 +16,7 @@ void group(int node){//尋找團體; node節點
 
     group(num[node]);//尋找該位的好友
 }
-int main(){
+int main(){//小群體
     int N, fri;//N人數; fri朋友
     int i;//i旗標
 

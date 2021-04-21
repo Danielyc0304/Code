@@ -6,7 +6,7 @@ int GCD(int a, int b){//最大公因數; a, b數字
         return a;
     return GCD(b, a%b);
 }
-int main(){
+int main(){//最大公因數(GCD)
     int a, b;//a, b數字
 
     cin>>a>>b;

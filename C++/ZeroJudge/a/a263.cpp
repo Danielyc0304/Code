@@ -68,7 +68,7 @@ int numB(int year, int month, int day){//將第二個日期轉為數字; year年
 
     return num;//回傳數字
 }
-int main(){
+int main(){//日期差幾天
     int b1, b2, c1, c2;//b1第一個日期月; b2第二個日期月; c1第一個日期日; c2第二個日期日
 
     while(cin>>a1>>b1>>c1>>a2>>b2>>c2){

@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//Sagit's 計分程式
     int N;//N答對題數
     int ans=0;//ans答案
 

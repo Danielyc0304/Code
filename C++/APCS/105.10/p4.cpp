@@ -25,7 +25,7 @@ void take_base(char a){//上壘; a幾壘安打
             base.erase(base.begin()+i);
         }
 }
-int main(){
+int main(){//棒球遊戲
     vector<vector<string>> sit;//sit打擊情況
     vector<string> tmp;//tmp暫存值
     string act;//act打擊

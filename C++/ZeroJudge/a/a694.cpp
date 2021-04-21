@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//吞食天地二
     int num[500][500], n, m, x1, y1, x2, y2;//num數字; n數字總數; m吃的總數; x1, y1, x2, y2吃的範圍
     int sum[500][500]={0};//sum總和
     int ans=0;//ans答案

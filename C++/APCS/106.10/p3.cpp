@@ -14,7 +14,7 @@ int DFS(int node){//深度優先搜尋; node節點
         hei=max(hei, DFS(tree[node][i])+1);//找出最高的高度
     return hei;//回傳高度
 }
-int main(){
+int main(){//樹狀圖分析
     vector<int> tmp;//tmp暫存值
     int n, k, num;//n節點總數; k節點下的資料總數; num數字
     int child[100000]={0};//child是否為子節點

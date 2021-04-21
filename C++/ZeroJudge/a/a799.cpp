@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//正值國
     int N;//N數字
 
     cin>>N;

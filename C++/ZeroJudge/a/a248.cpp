@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//新手訓練 ~ 陣列應用
     int a, b, N;//a, b數字; N小數位數
     int i;//i旗標
 

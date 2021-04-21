@@ -2,7 +2,7 @@
 #include<sstream>
 using namespace std;
 
-int main(){
+int main(){//秘密差
     string X;//X數字
     stringstream ss;//ss字串串流
     int s, num1=0, num2=0;//s計算值; num1奇數位總和; num2偶數位總和

@@ -24,7 +24,7 @@ void flip(){//翻轉陣列
         for(j=0; j<C; ++j)
             num[i][j]=tmp[R-i-1][j];//翻轉陣列
 }
-int main(){
+int main(){//矩陣轉換
     int act[10], M;//act動作; M動作次數
     int i, j;//i, j旗標
 

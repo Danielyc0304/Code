@@ -24,7 +24,7 @@ void combination(int face[], int money, int j){//排列組合; face面值; money
         combination(face, money-face[j]*i, j+1);//執行下一個面值
     }
 }
-int main(){
+int main(){//換銅板
     int face[5], money;//face面值; money目標金額
     int i;//i旗標
 

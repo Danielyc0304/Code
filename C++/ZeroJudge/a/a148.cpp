@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//You Cannot Pass?!
     int n, grade;//n成績總數; grade成績
     double sum=0;//sum總和
     int i;//i旗標

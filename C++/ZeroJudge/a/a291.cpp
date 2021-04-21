@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//nAnB problem
     int a[4], num[4], n;//a原密碼; num猜測密碼; n猜測次數
     int tmp[4];//tmp暫存值
     int ans1=0, ans2=0;//ans1, ans2答案

@@ -2,7 +2,7 @@
 #include<sstream>
 using namespace std;
 
-int main(){
+int main(){//二進位制轉換
     int a;//a數字
     stringstream ss;//ss字串串流
     string num;//num數字

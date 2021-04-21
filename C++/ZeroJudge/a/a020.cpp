@@ -3,7 +3,7 @@
 #include<cstring>
 using namespace std;
 
-int main(){
+int main(){//身分證檢驗
     char a[11];//a身分證字號
     stringstream ss;//ss字串串流
     int s=8, num, sum;//s計算值; num數字; sum總和

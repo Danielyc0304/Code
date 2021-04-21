@@ -3,7 +3,7 @@
 #include<cstring>
 using namespace std;
 
-int main(){
+int main(){//提款卡密碼
     char a[8];//a字串
     int i;//i旗標
 

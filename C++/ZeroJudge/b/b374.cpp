@@ -3,7 +3,7 @@
 #include<map>
 using namespace std;
 
-int main(){
+int main(){//[福州19中]众数
     map<int, int, less<int>> fre;//fre眾數
     int N, num;//N數字總數; num數字
     int c;//c計數

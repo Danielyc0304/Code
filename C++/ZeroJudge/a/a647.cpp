@@ -2,7 +2,7 @@
 #include<iomanip>
 using namespace std;
 
-int main(){
+int main(){//投資專家
     int n;//n測資總數
     double m, p;//m投資金額; p價值
     int i;//i旗標

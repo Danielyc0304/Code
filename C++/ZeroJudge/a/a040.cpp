@@ -2,7 +2,7 @@
 #include<cmath>
 using namespace std;
 
-int main(){
+int main(){//阿姆斯壯數
     int n, m;//n起始數字; m結束數字
     int s, c=0, num, tmp, sum=0;//s計算值; c判斷; num數字; tmp暫存值; sum總和
     int i;//i旗標

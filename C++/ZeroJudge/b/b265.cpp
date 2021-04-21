@@ -3,7 +3,7 @@
 #include<map>
 using namespace std;
 
-int main(){
+int main(){//Q11286 - Conformity
     map<string, int> com;//com同樣組合的次數
     int num1[5], n;//num1課程代號; n排列組合總數
     string num2;//num2排序後課程代號

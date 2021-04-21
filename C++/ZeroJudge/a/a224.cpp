@@ -2,7 +2,7 @@
 #include<cstring>
 using namespace std;
 
-int main(){
+int main(){//明明愛明明
     char a[1001];//a字串
     char word[26]={'\0'};//word字母
     int c=0;//c2計數

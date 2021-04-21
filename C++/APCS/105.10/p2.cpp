@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//最大和
     int num[20][20], N, M;//num數字; N行數; M每行個數
     int mnum[20]={0}, c=0;//mnum每行的最大數字
     int ans=0;//ans答案

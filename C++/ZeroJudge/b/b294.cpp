@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//經濟大恐荒
     int n, num;//n天數; num買的數量
     int ans=0;//ans答案
     int i;//i旗標

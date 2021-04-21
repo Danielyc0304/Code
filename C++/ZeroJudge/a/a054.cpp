@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//電話客服中心
     int a;//a身分證字號
     int s, num, sum=0;//s計算值; num數字; sum總和
 

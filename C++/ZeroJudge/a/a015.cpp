@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//矩陣的翻轉
     int num[99][99], a, b;//num數字; a列; b行
     int i, j;//i, j旗標
 

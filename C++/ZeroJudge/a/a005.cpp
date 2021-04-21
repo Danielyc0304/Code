@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//Eva 的回家作業
     int num[5], t;//num數字; t數列總數
     int s;//s計算值
     int i, j;//i, j旗標

@@ -10,7 +10,7 @@ struct data{//資料
 bool cmp(struct data a, struct data b){//排序規則; a, b資料
     return a.weight*b.frequency<b.weight*a.frequency;//重量*被拿取的次數小的在前面
 }
-int main(){
+int main(){//物品堆疊
     struct data a[100000];//a資料
     int N;//N總數
     int s=0;//s運算值

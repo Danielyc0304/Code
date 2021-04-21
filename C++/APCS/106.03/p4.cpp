@@ -23,7 +23,7 @@ bool judge(int range){//判斷可行性; range基地台範圍
     }
     return false;
 }
-int main(){
+int main(){//基地台
     int tmp;//tmp暫存值
     int max, min=1;//max最大可能答案; min最小可能答案
     int i;//i旗標

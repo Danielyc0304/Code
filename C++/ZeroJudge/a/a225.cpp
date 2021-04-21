@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//明明愛排列
     int num[1000], n;//num數字; n數字總數
     int i, j;//i, j旗標
 

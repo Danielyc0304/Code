@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//兩光法師占卜術
     int M, D;//M月; D日
 
     cin>>M>>D;

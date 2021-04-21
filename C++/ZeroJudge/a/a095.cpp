@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//麥哲倫的陰謀
     int N, M;//N犯人; M紅帽
 
     while(cin>>N>>M){

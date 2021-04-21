@@ -2,7 +2,7 @@
 #include<algorithm>
 using namespace std;
 
-int main(){
+int main(){//三角形辨別
     int a[3];//a三角形三邊長
     int i;//i旗標
 

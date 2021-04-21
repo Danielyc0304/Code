@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+int main(){//乘乘樂
     int T, num;//T數字總數; num數字
     int ans=1;//ans答案
     int i;//i旗標

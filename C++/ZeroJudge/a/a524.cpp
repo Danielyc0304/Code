@@ -2,7 +2,7 @@
 #include<algorithm>
 using namespace std;
 
-int main(){
+int main(){//手機之謎
     int n;//n數字
     int num[8];//num數字
     int i;//i旗標
