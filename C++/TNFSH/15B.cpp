@@ -2,18 +2,18 @@
 using namespace std;
 
 int main(){//名次於我如浮雲
-    int grade[50], N;//grade成績; N成績總數
+    int gra[50], N;//gra成績; N成績總數
     int c1=0, c2=0, c3=0;//c1, c2, c3計數
     int i;//i旗標
 
     cin>>N;
 
     for(i=0; i<N; ++i){
-        cin>>grade[i];
+        cin>>gra[i];
 
-        if(grade[0]>grade[i])
+        if(gra[0]>gra[i])
             ++c1;
-        else if(grade[0]==grade[i])
+        else if(gra[0]==gra[i])
             ++c2;
         else
             ++c3;

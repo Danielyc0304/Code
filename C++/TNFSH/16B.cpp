@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){//成績統計圖表製作
-    int grade[100], n;//grade成績; n成績
+    int gra[100], n;//gra成績; n成績
     int c1=0, c2=0, c3=0, c4=0, c5=0, max=0, maxi;//c1, c2, c3, c4, c5計數; max最大值; maxi最大值項數
     double sum=0;//sum總和
     int i;//i旗標
@@ -11,18 +11,18 @@ int main(){//成績統計圖表製作
     cin>>n;
 
     for(i=1; i<=n; ++i){
-        cin>>grade[i];
+        cin>>gra[i];
 
-        sum+=grade[i];
+        sum+=gra[i];
 
-        if(grade[i]>max){
-            max=grade[i];
+        if(gra[i]>max){
+            max=gra[i];
             maxi=i;
         }
-        if(grade[i]>=90) ++c1;
-        else if(grade[i]>=80) ++c2;
-        else if(grade[i]>=70) ++c3;
-        else if(grade[i]>=60) ++c4;
+        if(gra[i]>=90) ++c1;
+        else if(gra[i]>=80) ++c2;
+        else if(gra[i]>=70) ++c3;
+        else if(gra[i]>=60) ++c4;
         else ++c5;
     }
     cout<<fixed<<setprecision(2)<<sum/n<<endl;

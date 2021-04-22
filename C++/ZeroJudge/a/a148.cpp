@@ -2,14 +2,14 @@
 using namespace std;
 
 int main(){//You Cannot Pass?!
-    int n, grade;//n成績總數; grade成績
+    int n, gra;//n成績總數; gra成績
     double sum=0;//sum總和
     int i;//i旗標
 
     while(cin>>n){
         for(i=0; i<n; ++i){
-            cin>>grade;
-            sum+=grade;
+            cin>>gra;
+            sum+=gra;
         }
         if(sum/n>59)
             cout<<"no\n";

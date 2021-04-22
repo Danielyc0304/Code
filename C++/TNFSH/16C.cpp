@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){//各科成績統計
     int n, a, b, c;//n全班人數; a, b, c成績
-    double grade[100];//grade三科成績總和
+    double gra[100];//gra三科成績總和
     int i;//i旗標
 
     cin>>n;
@@ -12,10 +12,10 @@ int main(){//各科成績統計
     for(i=1; i<=n; ++i){
         cin>>a>>b>>c;
 
-        grade[i]=a+b+c;
+        gra[i]=a+b+c;
     }
     for(; n>0; --n)
-        cout<<fixed<<setprecision(2)<<n<<": "<<grade[n]/3<<endl;//反序輸出三科成績平均
+        cout<<fixed<<setprecision(2)<<n<<": "<<gra[n]/3<<endl;//反序輸出三科成績平均
     return 0;
 }
 /*

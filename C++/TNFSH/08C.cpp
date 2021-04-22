@@ -2,16 +2,16 @@
 using namespace std;
 
 int main(){//You shall not pass!!
-    int n, grade;//n成績總數; grade成績
+    int n, gra;//n成績總數; gra成績
     int c=0;//c判斷
     int i;//i旗標
 
     cin>>n;
 
     for(i=0; i<n; ++i){
-        cin>>grade;
+        cin>>gra;
 
-        if(grade<60)
+        if(gra<60)
             c=1;
     }
     if(c==0)

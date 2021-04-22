@@ -3,16 +3,16 @@
 using namespace std;
 
 int main(){//全班某科成績計算
-    int n, grade;//n成績總數; grade成績
+    int n, gra;//n成績總數; gra成績
     double ans=0;//ans答案
     int i;//i旗標
 
     cin>>n;
 
     for(i=0; i<n; ++i){
-        cin>>grade;
+        cin>>gra;
 
-        ans+=grade;
+        ans+=gra;
     }
     cout<<fixed<<setprecision(2)<<ans/n<<endl;//輸出平均成績
 

@@ -13,7 +13,7 @@ int main(){//定時K彈
     for(i=1; i<=N; ++i)
         num.push_back(i);//輸入數字
     for(i=0; i<K; ++i){
-        eli=(eli+M-1)%num.size();
+        eli=(eli+M-1)%num.size();//計算下一個淘汰的人
 
         num.erase(num.begin()+eli);//淘汰
     }
