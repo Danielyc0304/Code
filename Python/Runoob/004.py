@@ -1,11 +1,23 @@
 a=int(input('year:\n'))#a年
 b=int(input('month:\n'))#b月
 c=int(input('day:\n'))#c日
-mon=[0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334]#mon累計天數
 lea=0#lea是否為閏年
+ans=0#ans答案
 
-if 0<b<=12:
-    ans=mon[b-1]
+if 1<=b<=12:
+    for i in range(1, b):
+        if i<=7:
+            if i==2:
+                ans+=28
+            elif i%2==1:
+                ans+=31
+            else:
+                ans+=30
+        else:
+            if i%2==0:
+                ans+=31
+            else:
+                ans+=30#計算月份
 else:
     print('data error')
 ans+=c
