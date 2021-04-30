@@ -12,12 +12,11 @@ int main(){//迷宮問題#1
     struct coordinate coo;//coo現處理座標
     char a[101][101];//迷宮
     int N;//N邊長
-    int dis[100][100], dir[4][2]={{0, 1}, {1, 0}, {0, -1}, {-1, 0}}, x, y;//dis距離; dir方向; x, y座標
+    int dis[100][100]={0}, dir[4][2]={{0, 1}, {1, 0}, {0, -1}, {-1, 0}}, x, y;//dis距離; dir方向; x, y座標
     int i, j;//i, j旗標
 
     cin>>N;
 
-    memset(dis, 0, sizeof(dis));
     dis[1][1]=1;
     coo_list.push({1, 1});//初始化
 
