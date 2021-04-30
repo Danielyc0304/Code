@@ -41,7 +41,7 @@ int DFS(int node){//深度優先搜尋; node節點
 }
 int main(){//血緣關係
 	int n, a, b;//n人數; a, b同時輸入，b為a的小孩
-	int child[100000]={0}, rdis;//child是否為小孩; rdis從根節點的最遠距離
+	int chi[100000]={0}, rdis;//chi是否為小孩; rdis從根節點的最遠距離
 	int i;//i旗標
 
 	cin>>n;
@@ -49,9 +49,9 @@ int main(){//血緣關係
 	for(i=0; i<n-1; ++i){
 		cin>>a>>b;
 		num[a].push_back(b);
-		child[b]=1;//b是小孩
+		chi[b]=1;//b是小孩
 	}
-	for(i=0; child[i]!=0; ++i);//尋找根節點
+	for(i=0; chi[i]!=0; ++i);//尋找根節點
 
 	rdis=DFS(i);//從根節點開始尋訪
 	mdis=max(mdis, rdis);//如果所有人都只有一個小孩時，rdis為最遠距離

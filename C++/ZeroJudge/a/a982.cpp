@@ -9,7 +9,7 @@ struct coordinate{//座標
 };
 int main(){//迷宮問題#1
     queue<coordinate> coo_list;//coo_list待處理座標
-    struct coordinate coo;//coo2現處理座標
+    struct coordinate coo;//coo現處理座標
     char a[101][101];//迷宮
     int N;//N邊長
     int dis[100][100], dir[4][2]={{0, 1}, {1, 0}, {0, -1}, {-1, 0}}, x, y;//dis距離; dir方向; x, y座標
