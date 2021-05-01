@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){//名次於我如浮雲
     int gra[50], N;//gra成績; N成績總數
-    int c1=0, c2=0, c3=0;//c1, c2, c3計數
+    int ans1=0, ans2=0, ans3=0;//ans1, ans2, ans3答案
     int i;//i旗標
 
     cin>>N;
@@ -12,13 +12,13 @@ int main(){//名次於我如浮雲
         cin>>gra[i];
 
         if(gra[0]>gra[i])
-            ++c1;
+            ++ans1;
         else if(gra[0]==gra[i])
-            ++c2;
+            ++ans2;
         else
-            ++c3;
+            ++ans3;
     }
-    cout<<c1<<endl<<c2-1<<endl<<c3<<endl;//輸出比第一項低、同分、高的人數
+    cout<<ans1<<endl<<ans2-1<<endl<<ans3<<endl;//輸出比第一項低、同分、高的人數
 
     return 0;
 }
