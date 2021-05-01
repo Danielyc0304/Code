@@ -23,7 +23,7 @@ int main(){//迷宮問題#1
     for(i=0; i<N; ++i)
         for(j=0; j<N; ++j)
             cin>>a[i][j];
-    while(coo_list.empty()==0){//廣度優先搜尋(BFS)，如果清單不是空的就持續執行
+    while(!coo_list.empty()){//廣度優先搜尋(BFS)，如果清單不是空的就持續執行
         coo=coo_list.front();//提取最前面的座標
         coo_list.pop();//刪除最前面的座標
 

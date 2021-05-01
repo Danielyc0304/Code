@@ -14,7 +14,7 @@ int main(){//手機之謎
         }
         cout<<endl;//輸出初始密碼
 
-        while(prev_permutation(num, num+n)==1){
+        while(prev_permutation(num, num+n)){
             for(i=0; i<n; ++i)
                 cout<<num[i];
             cout<<endl;//輸出字典反向排序所有密碼

@@ -17,7 +17,7 @@ int numA(int month, int day){//將第一個日期轉為數字; month月; day日
         if(i<=7){
             if(i==2){
                 num+=28;
-                if(leap_year(a1)==1)
+                if(leap_year(a1))
                     ++num;
             }
             else{
@@ -42,14 +42,14 @@ int numB(int year, int month, int day){//將第二個日期轉為數字; year年
     
     for(; year<a2; ++year){
         num+=365;
-        if(leap_year(year)==1)
+        if(leap_year(year))
             ++num;
     }
     for(i=1; i<month; ++i){
         if(i<=7){
             if(i==2){
                 num+=28;
-                if(leap_year(year)==1)
+                if(leap_year(year))
                     ++num;
             }
             else{

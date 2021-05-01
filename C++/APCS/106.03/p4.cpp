@@ -39,7 +39,7 @@ int main(){//基地台
     max=(loc[N-1]-loc[0])/K+1;//最大可能答案為最遠距離/基地台個數+1
 
     while(max>min){//二分搜尋法
-        if(judge((max+min)/2)==1)//如果可行
+        if(judge((max+min)/2))//如果可行
             max=(max+min)/2;//往左邊找，涵蓋(max+min)/2因為此為成立的情況
         else
             min=(max+min)/2+1;//往右邊找，不涵蓋(max+min)/2+1因為此為不成立的情況
