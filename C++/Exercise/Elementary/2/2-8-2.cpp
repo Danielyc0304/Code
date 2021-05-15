@@ -2,13 +2,13 @@
 #include<algorithm>
 using namespace std;
 
-typedef struct data{//線段
+typedef struct line{//線段
     int a;//a起始點
     int b;//b結束點
-}Data;
-Data num[10000];//num線段
+}Line;
+Line num[10000];//num線段
 
-bool cmp(Data a, Data b){//排序規則; a, b線段
+bool cmp(Line a, Line b){//排序規則; a, b線段
     if(a.a==b.a)//如果起始點相同
         return a.b>b.b;//結束點大的在前面
     return a.a<b.a;//起始點小的在前面

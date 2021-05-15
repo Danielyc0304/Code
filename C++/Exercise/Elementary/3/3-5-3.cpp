@@ -8,14 +8,14 @@ int num_conversion(string a){//數字轉換; a字串
     if(a=="1B") return 1;//如果為一壘安打，回傳1
     if(a=="2B") return 2;//如果為二壘安打，回傳2
     if(a=="3B") return 3;//如果為三壘安打，回傳3
-    if(a=="HR") return 4;//如果為全壘打，回傳4
+    return 4;//如果為全壘打，回傳4
 }
 int take_base(int a){//上壘; a數字
     int s=0;//s計算值
     int i;//i旗標
 
     for(i=3; i>3-a; --i)//得分
-        if(bas[i]==1)
+        if(bas[i])
             ++s;
     for(i=3; i>a; --i)//移動
         bas[i]=bas[i-a];
@@ -29,7 +29,7 @@ int take_base(int a){//上壘; a數字
 }
 int main(){//棒球遊戲(10510第4題)
     string act;//act打擊
-    int sit[9][20], a[9], b;//sit打擊情況; a行裡有幾項; b目標出局數
+    int sit[9][5], a[9], b;//sit打擊情況; a行裡有幾項; b目標出局數
     int c=0;//c計數
     int ans=0;//ans答案
     int i, j, k;//i, j旗標
@@ -47,10 +47,10 @@ int main(){//棒球遊戲(10510第4題)
 
     for(i=1; i<4; ++i)
         bas[i]=false;//初始化
-    for(i=0; i<9 && c<b; ++i){
+    for(i=0; i<9 && c<b; ++i)
         for(j=0; j<9 && c<b; ++j){
-            if(sit[i][j]>0)//如果上壘
-                ans+=take_base(sit[i][j]);
+            if(sit[j][i]>0)//如果上壘
+                ans+=take_base(sit[j][i]);
             else{//如果出局
                 ++c;
 
@@ -59,7 +59,36 @@ int main(){//棒球遊戲(10510第4題)
                         bas[k]=false;//清空壘包
             }
         }
-        cout<<ans<<endl;//輸出分數
-    }
+    cout<<ans<<endl;//輸出分數
+
     return 0;
 }
+/*
+Input:
+5 1B 1B FO GO 1B
+5 1B 2B FO FO SO
+4 SO HR SO 1B
+4 FO FO FO HR
+4 1B 1B 1B 1B
+4 GO GO 3B GO
+4 1B GO GO SO
+4 SO GO 2B 2B
+4 3B GO GO FO
+3
+Output:
+0
+*//*
+Input:
+5 1B 1B FO GO 1B
+5 1B 2B FO FO SO
+4 SO HR SO 1B
+4 FO FO FO HR
+4 1B 1B 1B 1B
+4 GO GO 3B GO
+4 1B GO GO SO
+4 SO GO 2B 2B
+4 3B GO GO FO
+6
+Output:
+5
+*/

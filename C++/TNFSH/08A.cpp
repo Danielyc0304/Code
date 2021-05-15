@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){//因數列舉
     int n;//n數字
-    int c=0;//c判斷
+    bool c=false;//c判斷
     int i;//i旗標
 
     cin>>n;
@@ -12,7 +12,7 @@ int main(){//因數列舉
         if(n%i==0){
             cout<<i<<endl;
 
-            c=1;
+            c=true;
         }
     if(c==0)
         cout<<"prime\n";//輸出因數

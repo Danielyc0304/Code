@@ -6,13 +6,13 @@ int num[10000], s=3;//num質數; s計算值
 int j=1;//j旗標
 
 void prime(int max){//建立質數表; max最大值
-    int c=0;//c判斷
+    int c=false;//c判斷
     int i;//i旗標
 
     for(; s<=sqrt(max); s+=2){
         for(i=0; i<j; ++i)
             if(s%num[i]==0){
-                c=1;
+                c=true;
 
                 break;
             }
@@ -20,12 +20,12 @@ void prime(int max){//建立質數表; max最大值
             num[j]=s;
             ++j;
         }
-        c=0;//初始化
+        c=false;//初始化
     }
 }
 int main(){//質數又來囉
     int a, b;//a起始數字; b結束數字
-    int c=0;//c判斷
+    bool c=false;//c判斷
     int ans=0;//ans答案
     int i;//i旗標
 
@@ -48,13 +48,13 @@ int main(){//質數又來囉
         for(; a<=b; a+=2){
             for(i=0; i<j; ++i)
                 if(a%num[i]==0 && a/num[i]!=1){
-                    c=1;
+                    c=true;
                     
                     break;
                 }
-            if(c==0)
+            if(c==false)
                 ++ans;
-            c=0;//初始化
+            c=false;//初始化
         }
         cout<<ans<<endl;//輸出兩數間的質數數量
 

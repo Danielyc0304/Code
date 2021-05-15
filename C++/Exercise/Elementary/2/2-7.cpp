@@ -5,20 +5,20 @@ using namespace std;
 
 #define Size 40
 
-typedef struct data{//資料
+typedef struct grade{//資料
     int chinese;//chinese國文成績
     int english;//english英文成績
     int math;//math數學成績
-}Data;
-bool cmp(Data a, Data b){//排序規則; a, b資料
-    if((a.chinese==b.chinese) && (a.english==b.english))//如果國文成績與英文成績都一樣
+}Grade;
+bool cmp(Grade a, Grade b){//排序規則; a, b資料
+    if((a.chinese==b.chinese) && (a.english==b.english))//如果國文成績與英文成績都相同
         return a.math>b.math;//數學成績高的在前面
-    if(a.chinese==b.chinese)//如果只有國文成績一樣
+    if(a.chinese==b.chinese)//如果只有國文成績相同
         return a.english>b.english;//英文成績高的在前面
     return a.chinese>b.chinese;//國文成績高的在前面
 }
 int main(){//多鍵值排序
-    Data a[Size];//a資料
+    Grade a[Size];//a資料
     int i;//i旗標
 
     srand(time(NULL));//產生隨機數

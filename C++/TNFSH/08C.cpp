@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){//You shall not pass!!
     int n, gra;//n成績總數; gra成績
-    int c=0;//c判斷
+    bool c=false;//c判斷
     int i;//i旗標
 
     cin>>n;
@@ -12,9 +12,9 @@ int main(){//You shall not pass!!
         cin>>gra;
 
         if(gra<60)
-            c=1;
+            c=true;
     }
-    if(c==0)
+    if(c==false)
         cout<<"HAHA, I PASS!!! Bite me!!!\n";
     else
         cout<<"Oh, No!!!\n";//判斷、輸出結果

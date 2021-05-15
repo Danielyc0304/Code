@@ -6,21 +6,21 @@ int num[44722], s=3;//num質數
 int j=1;//j旗標
 
 void prime(int max){//建立質數表; max最大值
-    int c=0;//c判斷
+    bool c=false;//c判斷
     int i;//i旗標
     
     for(; s<=sqrt(max); s+=2){//執行到最大值開根號，並以奇數執行
         for(i=0; i<j; ++i)
             if(s%num[i]==0){
-                c=1;
+                c=true;
                 
                 break;
             }
-        if(c==0){
+        if(c==false){
             num[j]=s;
             ++j;
         }
-        c=0;//初始化
+        c=false;//初始化
     }
 }
 int main(){//质因数之和

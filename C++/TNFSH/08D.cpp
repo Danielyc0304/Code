@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){//奇偶問題
     int n, num;//n數字總數; num數字
-    int c=0;//c判斷
+    bool c=false;//c判斷
     int i;//i旗標
 
     cin>>n;
@@ -12,9 +12,9 @@ int main(){//奇偶問題
         cin>>num;
 
         if(num%2==0)
-            c=1;
+            c=true;
     }
-    if(c==0)
+    if(c==false)
         cout<<"Very Good!!!\n";
     else
         cout<<"Oh, No!!!\n";//判斷、輸出結果

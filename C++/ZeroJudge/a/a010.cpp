@@ -6,7 +6,8 @@ int num[1000];//num質數
 int j=1;//j旗標
 
 void prime(int max){//建立質數表; max最大值
-    int s, c=0;//s計算值; c判斷
+    bool c=false;//c判斷
+    int s;//s計算值
     int i;//i旗標
 
     num[0]=2;//第一個質數為2
@@ -14,15 +15,15 @@ void prime(int max){//建立質數表; max最大值
     for(s=3; s<=sqrt(max); s+=2){//執行到最大值開根號，並以奇數執行
         for(i=0; i<j; ++i)
             if(s%num[i]==0){
-                c=1;
+                c=true;
 
                 break;
             }
-        if(c==0){
+        if(c==false){
             num[j]=s;
             ++j;
         }
-        c=0;
+        c=false;
     }
 }
 int main(){//因數分解

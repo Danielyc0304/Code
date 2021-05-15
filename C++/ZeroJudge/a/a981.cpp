@@ -4,7 +4,7 @@
 using namespace std;
 
 int num[30], n, m;//num數字; n數字總數; m目標數字
-int c=0;//c判斷
+bool c=false;//c判斷
 int ans[30];//ans答案
 int j=0;//j旗標
 
@@ -19,12 +19,12 @@ void DFS(int sum, int i){//深度優先搜尋; sum總和; i旗標
     ans[j]=num[i];//答案輸入為num[i]
 
     if(sum==m){//如果剛好是目標數字
-        for(k=0; num[i]==num[i+k]; ++k){//如果有連續一樣的數字就重複輸出
+        for(k=0; num[i]==num[i+k]; ++k){//如果有連續相同的數字就重複輸出
             for(l=0; l<=j; ++l)
                 cout<<ans[l]<<' ';
             cout<<endl;//輸出結果
         }
-        c=1;
+        c=true;
         --j;//答案輸入退回一個
 
         return;
@@ -45,7 +45,7 @@ int main(){//求和問題
 
     DFS(num[0], 0);
 
-    if(c==0)//如果沒有輸出
+    if(c==false)//如果沒有輸出
         cout<<-1<<endl;
     return 0;
 }

@@ -23,7 +23,7 @@ int main(){//画蛇添足
         for(i=0; i<m; ++i){
             cin>>x>>y;
 
-            if(x==tmpx){//如果x座標一樣
+            if(x==tmpx){//如果x座標相同
                 if(y>tmpy)//如果y座標比暫存值大
                     for(j=tmpy; j<=y; ++j)//從tmpy開始畫
                         a[x][j]='*';
@@ -31,7 +31,7 @@ int main(){//画蛇添足
                     for(j=y; j<=tmpy; ++j)//從y開始畫
                         a[x][j]='*';
             }
-            else{//如果y座標一樣
+            else{//如果y座標相同
                 if(x>tmpx)//如果x座標比暫存值大
                     for(j=tmpx; j<=x; ++j)//從tmpx開始畫
                         a[j][y]='*';

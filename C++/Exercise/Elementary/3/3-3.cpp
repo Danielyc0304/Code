@@ -24,7 +24,7 @@ int main(){//神奇的蝸牛(模擬高度)
             cout<<"第"<<ans<<"天爬到樹頂"<<endl;
         else//如果掉到地面
             cout<<"第"<<ans<<"天掉到地面"<<endl;
-        ans=0, hei=0;
+        ans=0, hei=0;//初始化
     }
     return 0;
 }

@@ -4,7 +4,7 @@ using namespace std;
 int main(){//交錯字串
     string a;//a字串
     int k;//k交錯字串長度
-    int pre, c=0 ,tmp=0;//pre前一位是大寫或小寫; c判斷; tmp暫存值
+    int pre, c=0 ,tmp=0;//pre前一位是大寫或小寫; c計數; tmp暫存值
     int ans=0;//ans答案
     int i;//i旗標
 
@@ -12,12 +12,12 @@ int main(){//交錯字串
     cin.get();
     getline(cin, a);
 
-    if(isupper(a[0])!=0)//第一個字是大寫
+    if(isupper(a[0]))//第一個字是大寫
         pre=0;
     else//第一個字是小寫
         pre=1;
     for(i=0; i<a.length(); ++i){
-        if((isupper(a[i])!=0 && pre==0) || (islower(a[i])!=0 && pre==1)){//如果與前一位同樣為大寫或同樣為小寫
+        if((isupper(a[i]) && pre==0) || (islower(a[i]) && pre==1)){//如果與前一位同樣為大寫或同樣為小寫
             ++c;
 
             if(c==k){//如果達到目標長度
@@ -38,7 +38,7 @@ int main(){//交錯字串
 
                 ans=max(ans, tmp);
             }
-            if(isupper(a[i])!=0 && pre==1)//如果為大寫
+            if(isupper(a[i]) && pre==1)//如果為大寫
                 pre=0;
             else//如果為小寫
                 pre=1;

@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){//高雄發大財
     int n, x, num;//n議員總數; x抽籤次數; num數字
-    int c=0;//c判斷
+    bool c=false;//c判斷
     int i, j;//i, j旗標
 
     cin>>n;
@@ -15,15 +15,15 @@ int main(){//高雄發大財
             cin>>num;
 
             if(num==87)
-                c=1;
+                c=true;
         }
         cout<<i<<':';
 
-        if(c==0)
+        if(c==false)
             cout<<"No\n";
         else
             cout<<"YES\n";//判斷、輸出結果
-        c=0;//初始化
+        c=false;//初始化
     }
     return 0;
 }

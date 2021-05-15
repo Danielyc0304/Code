@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){//邏輯運算子
     int a, b, c;//a, b數字; c目標
-    int count=0;//count判斷
+    bool count=false;//count判斷
 
     cin>>a>>b>>c;
     
@@ -13,17 +13,17 @@ int main(){//邏輯運算子
 
     if((a&b)==c){//a AND b
         cout<<"AND\n";
-        count=1;
+        count=true;
     }
     if((a|b)==c){//a OR b
         cout<<"OR\n";
-        count=1;
+        count=true;
     }
     if((a^b)==c){//a XOR b
         cout<<"XOR\n";
-        count=1;
+        count=true;
     }
-    if(count==0)//如果皆不成立
+    if(count==false)//如果皆不成立
         cout<<"IMPOSSIBLE\n";
     return 0;
 }

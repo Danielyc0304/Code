@@ -4,7 +4,8 @@ using namespace std;
 
 int main(){//翻轉世界
     int num[10][10], T, N, M;//num數字; T測資總數; N長; M寬
-    int tmp[10], c=0;//tmp暫存值; c判斷
+    bool c=false;//c判斷
+    int tmp[10];//tmp暫存值
     int i, j, k;//i, j, k旗標
 
     cin>>T;
@@ -22,18 +23,18 @@ int main(){//翻轉世界
 
             for(k=0; k<M; ++k)
                 if(tmp[k]!=num[N-j-1][k]){//如果反轉之後不相符
-                    c=1;
+                    c=true;
 
                     break;
                 }
-            if(c==1)
+            if(c==true)
                 break;
         }
-        if(c==0)//如果相符
+        if(c==false)//如果相符
             cout<<"go forward\n";
         else//如果不相符
             cout<<"keep defending\n";
-        c=0;//初始化
+        c=false;//初始化
     }
     return 0;
 }
