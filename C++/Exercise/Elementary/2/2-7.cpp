@@ -5,7 +5,7 @@ using namespace std;
 
 #define Size 40
 
-typedef struct grade{//資料
+typedef struct grade{//成績
     int chinese;//chinese國文成績
     int english;//english英文成績
     int math;//math數學成績
@@ -18,7 +18,7 @@ bool cmp(Grade a, Grade b){//排序規則; a, b資料
     return a.chinese>b.chinese;//國文成績高的在前面
 }
 int main(){//多鍵值排序
-    Grade a[Size];//a資料
+    Grade a[Size];//a成績
     int i;//i旗標
 
     srand(time(NULL));//產生隨機數

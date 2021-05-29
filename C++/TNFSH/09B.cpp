@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){//全班某科成績計算
     int n, gra;//n成績總數; gra成績
-    double ans=0;//ans答案
+    double s=0;//s計算值
     int i;//i旗標
 
     cin>>n;
@@ -12,9 +12,9 @@ int main(){//全班某科成績計算
     for(i=0; i<n; ++i){
         cin>>gra;
 
-        ans+=gra;
+        s+=gra;
     }
-    cout<<fixed<<setprecision(2)<<ans/n<<endl;//輸出平均成績
+    cout<<fixed<<setprecision(2)<<s/n<<endl;//輸出平均成績
 
     return 0;
 }
