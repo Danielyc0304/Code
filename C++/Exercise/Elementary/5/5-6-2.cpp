@@ -9,13 +9,13 @@ int main(){
     while(cin>>n){
         for(i=0; i<n; ++i)
             cin>>num[i];
-        sort(num, num+n);
+        sort(num, num+n);//排序
         
         do{
             for(i=0; i<n; ++i)
                 cout<<num[i]<<' ';
-            cout<<endl;
-        }while(next_permutation(num, num+n));
+            cout<<endl;//輸出字典正向排序所有密碼
+        }while(next_permutation(num, num+n));//字典順序從前到後
     }
     return 0;
 }

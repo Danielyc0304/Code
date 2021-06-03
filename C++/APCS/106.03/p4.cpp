@@ -7,8 +7,7 @@ vector<int> loc;//loc服務點位置
 int N, K;//N服務點個數; K基地台個數
 
 bool judge(int range){//判斷可行性; range基地台範圍
-    int ser;//ser服務範圍
-    int c=0;//c計數
+    int c=0, ser;//c計數; ser服務範圍
     int i;//i旗標
 
     for(i=0; i<N; ){
@@ -16,7 +15,7 @@ bool judge(int range){//判斷可行性; range基地台範圍
         ++c;
 
         if(c>K)//如果基地台個數大於目標個數
-            return false;//回傳否
+            return false;//回傳否   
         if(ser>=loc[N-1])//如果服務範圍大於最後一個服務點
             return true;//回傳是
         for(; ser>=loc[i]; ++i);//當服務點在服務範圍內
