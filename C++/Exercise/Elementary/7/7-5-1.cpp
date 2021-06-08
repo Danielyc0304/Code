@@ -18,6 +18,8 @@ int main(){//最長共同子序列—不考慮最佳解路徑
                     ans[i+1][j+1]=max(ans[i+1][j], ans[i][j+1]);//尋找上一時刻的最大長度
             }
         cout<<ans[a.length()][b.length()]<<endl;//輸出最長共同子序列
+
+        memset(ans, 0, sizeof(ans));//初始化
     }
     return 0;
 }
