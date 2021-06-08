@@ -42,6 +42,8 @@ int main(){//整數平均分配
                 R=M-1;
         }
         cout<<L<<endl;//輸出最多可以拿幾顆
+
+        L=0, mnum=0;//初始化
     }
     return 0;
 }

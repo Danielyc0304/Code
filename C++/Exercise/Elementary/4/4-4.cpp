@@ -48,6 +48,8 @@ int main(){//工作排程 4 有截止期限的最大利潤
         for(i=0; i<c2; ++i)
             ans+=num[i].income;
         cout<<ans<<endl;//輸出最大利潤
+
+        c2=0, ans=0;//初始化
     }
     return 0;
 }

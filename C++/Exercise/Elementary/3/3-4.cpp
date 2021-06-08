@@ -1,6 +1,7 @@
 #include<iostream>
 #include<algorithm>
 #include<sstream>
+#include<cstring>
 using namespace std;
 
 int c1[13]={0}, c2[13]={0};//c1第一個人每個數字出現次數; c2第二個人每個數字出現次數
@@ -278,6 +279,7 @@ int main(){//撲克牌比大小(模擬撲克牌遊戲進行)
             else//如果第二個人牌比較大
                 cout<<"第二位玩家獲勝\n";
         }
+        memset(c1, 0, sizeof(c1)), memset(c2, 0, sizeof(c2));//初始化
     }
     return 0;
 }

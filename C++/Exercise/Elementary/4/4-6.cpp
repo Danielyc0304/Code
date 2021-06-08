@@ -38,6 +38,8 @@ int main(){//物品可以分割的背包(Fractional Knapsack)問題
             }
         }
         cout<<ans<<endl;//輸出最大可放的價值
+
+        ans=0;//初始化
     }
     return 0;
 }
