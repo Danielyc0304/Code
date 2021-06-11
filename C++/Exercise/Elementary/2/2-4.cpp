@@ -26,8 +26,8 @@ void quicksort(int *num, int left, int right){//排序; num數字; left左邊界
         j=right+1;
 
         while(1){
-            while((i<right) && (num[++i]<num[left]));//由前往後，尋找比第一個數大的值
-            while((j>0) && (num[--j]>num[left]));//由後往前，尋找比第一個數小的值
+            while((i<right) && (num[++i]<num[left]));//由前往後，尋找比第一個數大的值(++i, num[i]<num[left])
+            while((j>0) && (num[--j]>num[left]));//由後往前，尋找比第一個數小的值(--j, num[j]>num[left])
 
             if(i>=j)//如果大的數字在右邊
                 break;
