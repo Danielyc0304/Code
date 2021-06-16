@@ -7,7 +7,7 @@ int main(){//nAnB problem
     int ans1=0, ans2=0;//ans1, ans2答案
     int i, j, k;//i, j, k旗標
 
-    while(scanf("%d%d%d%d", &a[0], &a[1], &a[2], &a[3])!=-1){
+    while(scanf("%d%d%d%d", &a[0], &a[1], &a[2], &a[3])!=EOF){
         scanf("%d", &n);
 
         for(i=0; i<n; ++i){

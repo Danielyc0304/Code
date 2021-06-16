@@ -5,7 +5,7 @@ int main(){//位元運算之進位篇
     int N;//N數字
     int ans=0;//ans答案
 
-    while(scanf("%d", &N)){
+    while(scanf("%d", &N)!=EOF){
         if(N==0)
             break;
         while(N!=0){

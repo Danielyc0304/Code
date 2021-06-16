@@ -16,7 +16,7 @@ int DFS(int node){//深度優先搜尋; node節點
 }
 int main(){//樹狀圖分析
     vector<int> tmp;//tmp暫存值
-    int n, k, num;//n節點總數; k節點下的資料總數; num數字
+    int n, k, num;//n節點總數; k子節點總數; num子節點
     int child[100000]={0};//child是否為子節點
     int ans=0;//ans答案
     int i, j;//i, j旗標

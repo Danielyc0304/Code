@@ -19,7 +19,7 @@ int main(){//線段覆蓋長度(10503第3題)
     int ans=0;//ans答案
     int i;//i旗標
 
-    while(scanf("%d", &n)!=-1){
+    while(scanf("%d", &n)!=EOF){
         for(i=0; i<n; ++i)
             scanf("%d %d", &(num[i].a), &(num[i].b));
         sort(num, num+n, cmp);//排序

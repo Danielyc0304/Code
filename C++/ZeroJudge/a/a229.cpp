@@ -17,7 +17,7 @@ void DFS(int left, int right, int i){//深度優先搜尋; left左括號; right�
     ans[i]=')', DFS(left, right+1, i+1);//加上右括號
 }
 int main(){//括號匹配問題
-    while(scanf("%d", &N)!=-1)
+    while(scanf("%d", &N)!=EOF)
         DFS(0, 0, 0);//輸出結果
     return 0;
 }
