@@ -2,7 +2,7 @@
 using namespace std;
 
 struct node{//節點
-    char word;//word文字
+    char word;//word字元
     struct node *left;//*left左邊子節點指標
     struct node *right;//*right右邊子節點指標
 };

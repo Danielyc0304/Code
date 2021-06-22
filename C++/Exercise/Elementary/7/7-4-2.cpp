@@ -7,7 +7,7 @@ int main(){//換零錢—考慮最佳解路徑
     int ans1[49999], ans2[49999];//ans1, ans2答案
     int i, j;//i, j旗標
 
-    memset(ans1, 0x6f, sizeof(ans1));//初始化mon為0x6f
+    memset(ans1, 0x6f, sizeof(ans1));
     
     ans1[0]=0;//0元不需要硬幣
 

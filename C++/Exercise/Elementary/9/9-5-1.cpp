@@ -1,5 +1,5 @@
 #include<iostream>
-#include<queue>
+#include<deque>
 #include<cstring>
 using namespace std;
 

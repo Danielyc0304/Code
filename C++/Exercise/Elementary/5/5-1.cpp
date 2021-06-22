@@ -18,7 +18,7 @@ int main(){//統計字母數量
                 ++ans[tolower(a[j])-'a'];
         for(j=0; j<26; ++j)
             if(ans[j]>0)
-                cout<<(char)(j+'a')<<' '<<ans[j]<<endl;//輸出統計結果
+                cout<<(char)('a'+j)<<' '<<ans[j]<<endl;//輸出統計結果
     }
     return 0;
 }

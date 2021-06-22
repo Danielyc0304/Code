@@ -4,10 +4,8 @@ using namespace std;
 
 int main(){//最長共同子序列—不考慮最佳解路徑
     string a, b;//a, b字串
-    int ans[101][101];//ans答案
+    int ans[101][101]={0};//ans答案
     int i, j;//i, j旗標
-
-    memset(ans, 0, sizeof(ans));//初始化c為0
 
     while(getline(cin, a) && getline(cin, b)){
         for(i=0; i<a.length(); ++i)

@@ -27,11 +27,11 @@ int main(){//Q11286 - Conformity
         }
         map<string, int>::iterator it;//宣告迭代器
         for(it=com.begin(); it!=com.end(); ++it){
-            if((*it).second>ans){//如果數值大於答案
-                ans=(*it).second;
+            if(it->second>ans){//如果數值大於答案
+                ans=it->second;
                 c=0;
             }
-            if((*it).second==ans)//如果數值等於答案
+            if(it->second==ans)//如果數值等於答案
                 ++c;
         }
         cout<<ans*c<<endl;//輸出結果

@@ -8,7 +8,7 @@ int main(){//01背包—考慮最佳解路徑
     int ans[999]={0};//ans答案
     int i, j;//i, j旗標
 
-    memset(use, -1, sizeof(use));//初始化use為-1
+    memset(use, -1, sizeof(use));
 
     while(cin>>n){
         for(i=0; i<n; ++i)

@@ -5,7 +5,7 @@ using namespace std;
 
 struct data{//資料
     int ID;//ID編號
-    char word;//word字
+    char word;//word字元
     int frequency;//frequency出現頻率
     bool node;//node文字節點
     int left;//left左邊

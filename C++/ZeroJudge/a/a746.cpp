@@ -8,7 +8,7 @@ int main(){//画蛇添足
     int tmpx=0, tmpy=0;//tmpx, tmpy座標暫存值
     int i, j;//i, j旗標
     
-    memset(a, ' ', sizeof(a));//初始化a為空格
+    memset(a, ' ', sizeof(a));
 
     while(cin>>n>>m){
         for(i=0; i<=n+1; ++i){

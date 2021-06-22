@@ -20,10 +20,8 @@ void traverse(int i, int j){//遍歷路徑; i, j旗標
         traverse(i-1, j);
 }
 int main(){//最長共同子序列—考慮最佳解路徑
-    int ans1[101][101];//ans1答案
+    int ans1[101][101]={0};//ans1答案
     int i, j;//i, j旗標
-
-    memset(ans1, 0, sizeof(ans1));//初始化ans1為0
     
     while(getline(cin, a) && getline(cin, b)){
         for(i=0; i<a.length(); ++i)
