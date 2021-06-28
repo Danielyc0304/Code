@@ -3,7 +3,8 @@ using namespace std;
 
 int main(){//最大和
     int num[20][20], N, M;//num數字; N行數; M每行個數
-    int mnum[20]={0}, c=0;//mnum每行的最大數字
+    bool c=false;//c判斷
+    int mnum[20]={0};//mnum每行的最大數字
     int ans=0;//ans答案
     int i, j;//i, j旗標
 
@@ -24,14 +25,14 @@ int main(){//最大和
         if(ans%mnum[i]==0){
             cout<<mnum[i]<<' ';
 
-            c=1;
+            c=true;
         }
     if(ans%mnum[i]==0){
         cout<<mnum[i];//輸出可以整除最大數字總和的最大數字
 
-        c=1;
+        c=true;
     }
-    if(c==0)//如果皆不能整除
+    if(c==false)//如果皆不能整除
         cout<<-1<<endl;
     return 0;
 }

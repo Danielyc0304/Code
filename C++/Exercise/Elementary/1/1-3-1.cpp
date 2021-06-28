@@ -3,7 +3,7 @@
 #include<iomanip>
 using namespace std;
 
-#define MAX 100
+#define MAX 100//MAX最大值
 
 int main(){//定義常數
     const double PI=acos(-1.0);//PI圓周率

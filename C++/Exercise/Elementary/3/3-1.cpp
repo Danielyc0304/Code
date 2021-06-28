@@ -2,7 +2,7 @@
 #include<cstring>
 using namespace std;
 
-#define Size 101
+#define Size 101//Size最大值
 
 int main(){//淘汰遊戲(使用陣列紀錄狀態)
     bool a[Size]={0};//a是否被淘汰

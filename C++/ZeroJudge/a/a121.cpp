@@ -16,7 +16,7 @@ void prime(int max){//建立質數表; max最大值
 
                 break;
             }
-        if(c==0){
+        if(c==false){
             num[j]=s;
             ++j;
         }

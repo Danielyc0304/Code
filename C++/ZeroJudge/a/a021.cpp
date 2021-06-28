@@ -79,7 +79,7 @@ void Subtraction(char a[]){//減法; a算式
 			}
 		}
 	for(i=1; tmpi1-i>-1 && tmpi2-i>tmpi1+2; ++i){//處理相同位數
-		if(tmpi1>=tmpi2-tmpi1-3 && c==0){
+		if(tmpi1>=tmpi2-tmpi1-3 && c==false){
 			ss<<a[tmpi1-i];
 			ss>>num1;
 			ss.clear();
@@ -208,7 +208,7 @@ void division(char a[]){//除法; a算式
             ss.clear();
         }
         for(i=0; i<2*tmpi1-tmpi2+4; ++i){//做tmpi1-(tmpi2-tmpi1-3)+1=第一個數字位數-第二個數字位數+1次
-            while(c==0){//如果同位數被除數大於除數
+            while(c==false){//如果同位數被除數大於除數
                 while(i>0 && numq[i-1]!=0){
                     for(j=0; j<tmpi2-tmpi1-2; ++j){//如果前一位不為0
                         if(j<tmpi2-tmpi1-3){
@@ -241,7 +241,7 @@ void division(char a[]){//除法; a算式
                         break;
                     }
                 }
-                if(c==0){
+                if(c==false){
                     for(j=0; j<tmpi2-tmpi1-3; ++j){
                         ss<<a[tmpi2-j-1];
                         ss>>num1;

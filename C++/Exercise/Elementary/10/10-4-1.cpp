@@ -16,8 +16,8 @@ bool bound(int x, int y){//判斷是否在界內; x, y座標
 }
 int main(){//迷宮
     int a[101][101];//a迷宮
-    deque<point> poi_list;//poi_list待處理座標點
-    struct point poi1, poi2;//poi1, poi2座標點
+    deque<struct point> poi_list;//poi_list待處理座標點
+    struct point poi1, poi2;//poi1, poi2現處理座標點
     int dir[4][2]={{0, 1}, {1, 0}, {0, -1}, {-1, 0}};//dir方向
     int ans[101][101];//ans答案
     int i, j;//i, j旗標
@@ -39,7 +39,7 @@ int main(){//迷宮
             poi_list.pop_front();//刪除最前面的座標點
 
             for(i=0; i<4; ++i)
-                if(bound(poi1.x+dir[i][0], poi1.y+dir[i][1]) && a[poi1.x+dir[i][0]][poi1.y+dir[i][1]]==1 && ans[poi1.x+dir[i][0]][poi1.y+dir[i][1]]==0){//如果在界內而且座標有路而且未處理
+                if(bound(poi1.x+dir[i][0], poi1.y+dir[i][1]) && a[poi1.x+dir[i][0]][poi1.y+dir[i][1]]==1 && ans[poi1.x+dir[i][0]][poi1.y+dir[i][1]]==0){//如果在界內且座標點有路且未處理
                     ans[poi1.x+dir[i][0]][poi1.y+dir[i][1]]=poi1.distance+1;
 
                     poi2.x=poi1.x+dir[i][0], poi2.y=poi1.y+dir[i][1];

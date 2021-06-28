@@ -3,7 +3,7 @@ using namespace std;
 
 bool bas[4];//bas壘包
 
-int num_conversion(string a){//數字轉換; a字串
+int num_conversion(string a){//轉換成數字; a字串
     if(a=="FO" || a=="GO" || a=="SO") return 0;//如果為出局，回傳0
     if(a=="1B") return 1;//如果為一壘安打，回傳1
     if(a=="2B") return 2;//如果為二壘安打，回傳2

@@ -14,7 +14,7 @@ int main(){//因數列舉
 
             c=true;
         }
-    if(c==0)
+    if(c==false)
         cout<<"prime\n";//輸出因數
     return 0;
 }

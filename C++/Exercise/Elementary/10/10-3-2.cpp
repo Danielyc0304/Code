@@ -29,7 +29,7 @@ void DFS(int node, int start){//深度優先搜尋; node節點; start遍歷起�
     }
 }
 int main(){//用DFS偵測是否有迴圈
-    char a, b;//a起點; b終點
+    char a, b;//a起點, b終點，建立有向圖
     int n;//邊總數n
     int tmp1, tmp2;//tmp1, tmp2暫存值
     int i;//i旗標
@@ -39,7 +39,7 @@ int main(){//用DFS偵測是否有迴圈
             cin>>a>>b;
             tmp1=a-'A';
             tmp2=b-'A';
-            edg[tmp1].push_back(tmp2);
+            edg[tmp1].push_back(tmp2);//建立有向圖
         }
         for(i=0; i<n; ++i){
             if(edg[i].size()>0)

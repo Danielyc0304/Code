@@ -2,7 +2,7 @@
 #include<ctime>
 using namespace std;
 
-#define Size 10
+#define Size 10//Size最大值
 
 void print(int num[], int size){//輸出; num數字; size大小
     int i;//i旗標

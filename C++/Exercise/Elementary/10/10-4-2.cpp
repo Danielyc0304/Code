@@ -17,8 +17,8 @@ bool bound(int x, int y){//判斷是否在界內; x, y座標
 
 int main(){//象棋馬的移動
     int sr, sc;//sr, sc起始位置
-    deque<point> poi_list;//poi_list待處理座標點
-    struct point poi1, poi2;//poi1, poi2座標點
+    deque<struct point> poi_list;//poi_list待處理座標點
+    struct point poi1, poi2;//poi1, poi2現處理座標點
     int dir[8][2]={{1, 2}, {2, 1}, {2, -1}, {1, -2}, {-1, -2}, {-2, -1}, {-2, 1}, {-1, 2}};//dir方向
     int ans[21][21]={0};//ans答案，初始化以免效率過低造成崩潰
     int i, j;//i, j旗標
@@ -36,7 +36,7 @@ int main(){//象棋馬的移動
             poi_list.pop_front();//刪除最前面的座標點
 
             for(i=0; i<8; ++i)
-                if(bound(poi1.x+dir[i][0], poi1.y+dir[i][1]) && ans[poi1.x+dir[i][0]][poi1.y+dir[i][1]]==0){//如果在界內而且座標有路而且未處理
+                if(bound(poi1.x+dir[i][0], poi1.y+dir[i][1]) && ans[poi1.x+dir[i][0]][poi1.y+dir[i][1]]==0){//如果在界內且未處理
                     ans[poi1.x+dir[i][0]][poi1.y+dir[i][1]]=poi1.step+1;
 
                     poi2.x=poi1.x+dir[i][0], poi2.y=poi1.y+dir[i][1];

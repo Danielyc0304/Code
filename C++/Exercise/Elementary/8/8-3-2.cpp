@@ -25,7 +25,7 @@ int main(){//可以插隊在任意位置
 
                 lin.remove(num1);
 
-                list<int>::iterator it=lin.begin();
+                auto it=lin.begin();//宣告list<int>的迭代器
                 for(i=1; i<num2; ++i)
                     ++it;
                 lin.insert(it, num1);//將第num1個人移到num2

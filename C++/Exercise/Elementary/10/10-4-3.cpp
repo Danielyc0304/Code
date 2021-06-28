@@ -15,8 +15,8 @@ bool bound(int x, int y){//判斷是否在界內; x, y座標
 }
 int main(){//有障礙物的馬
     int n, x, y, sr, sc, tr, tc;//n障礙物總數; x, y障礙物座標; sr, sc起始位置; tr, tc目標位置
-    deque<point> poi_list;//poi_list待處理座標點
-    struct point poi1, poi2;//poi1, poi2座標點
+    deque<struct point> poi_list;//poi_list待處理座標點
+    struct point poi1, poi2;//poi1, poi2現處理座標點
     int map[499][499]={0}, dir[8][2]={{1, 2}, {2, 1}, {2, -1}, {1, -2}, {-1, -2}, {-2, -1}, {-2, 1}, {-1, 2}}, cru[8][2]={{0, 1}, {1, 0}, {1, 0}, {0, -1}, {0, -1}, {-1, 0}, {-1, 0}, {0, 1}};//map距離; dir方向; cru拐腳位置
     int ans=0;//ans答案
     int i;//i旗標
@@ -35,20 +35,20 @@ int main(){//有障礙物的馬
         poi1.step=1;
         poi_list.push_back(poi1);
 
-        while(poi_list.size()>0){
-            poi1=poi_list.front();
-            poi_list.pop_front();
+        while(poi_list.size()>0){//廣度優先搜尋
+            poi1=poi_list.front();//提取最前面的座標點
+            poi_list.pop_front();//刪除最前面的座標點
 
             for(i=0; i<8; ++i){
-                if(bound(poi1.x+cru[i][0], poi1.y+cru[i][1]) && map[poi1.x+cru[i][0]][poi1.y+cru[i][1]]!=1){
+                if(bound(poi1.x+cru[i][0], poi1.y+cru[i][1]) && map[poi1.x+cru[i][0]][poi1.y+cru[i][1]]!=1){//如果在界內且座標點沒有障礙物
                     if(bound(poi1.x+dir[i][0], poi1.y+dir[i][1]) && map[poi1.x+dir[i][0]][poi1.y+dir[i][1]]==0){
-                        map[poi1.x+dir[i][0]][poi1.y+dir[i][1]]=2;
+                        map[poi1.x+dir[i][0]][poi1.y+dir[i][1]]=2;//設定為已被尋訪過
 
                         poi2.x=poi1.x+dir[i][0], poi2.y=poi1.y+dir[i][1];
                         poi2.step=poi1.step+1;
-                        poi_list.push_back(poi2);
+                        poi_list.push_back(poi2);//儲存座標在最後面
                     }
-                    if(bound(poi1.x+dir[i][0], poi1.y+dir[i][1]) && map[poi1.x+dir[i][0]][poi1.y+dir[i][1]]==999){
+                    if(bound(poi1.x+dir[i][0], poi1.y+dir[i][1]) && map[poi1.x+dir[i][0]][poi1.y+dir[i][1]]==999){//如果尋訪到目標位置
                         ans=poi1.step+1;
 
                         poi_list.clear();
@@ -61,7 +61,7 @@ int main(){//有障礙物的馬
         if(ans==0)
             cout<<"無法到達\n";
         else
-            cout<<ans<<endl;
+            cout<<ans<<endl;//輸出到目標位置的最晚距離
         memset(map, 0, sizeof(map));
         ans=0;//初始化
     }

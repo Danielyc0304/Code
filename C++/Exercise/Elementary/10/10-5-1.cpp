@@ -3,7 +3,7 @@
 #include<cstring>
 using namespace std;
 
-#define MAX 100000
+#define MAX 100000//MAX最大值
 
 deque<int> tre[MAX];//tre樹狀圖
 int ans=0;//ans答案
@@ -43,7 +43,7 @@ int DFS(int node){//深度優先搜尋; node節點
     return max1;//回傳第一遠距離
 }
 int main(){//血緣關係(10503第4題)
-    int n, a, b;//n人數; a, b同時輸入，b為a的小孩
+    int n, a, b;//n人數; a起點, b終點，建立有向圖(樹狀圖)
     bool chi[MAX]={false};//chi是否為小孩
     int rdis;//rdis從根節點的最遠距離
     int i;//i旗標
@@ -51,7 +51,7 @@ int main(){//血緣關係(10503第4題)
     while(scanf("%d", &n)!=EOF){
         for(i=0; i<n-1; ++i){
             scanf("%d %d", &a, &b);
-            tre[a].push_back(b);
+            tre[a].push_back(b);//建立有向圖(樹狀圖)
             chi[b]=true;//b是小孩
         }
         for(i=0; chi[i]==true; ++i);//尋找根節點

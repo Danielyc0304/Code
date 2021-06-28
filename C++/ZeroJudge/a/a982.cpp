@@ -8,7 +8,7 @@ struct coordinate{//座標
     int y;//y座標
 };
 int main(){//迷宮問題#1
-    queue<coordinate> coo_list;//coo_list待處理座標
+    queue<struct coordinate> coo_list;//coo_list待處理座標
     struct coordinate coo;//coo現處理座標
     char a[101][101];//迷宮
     int N;//N邊長

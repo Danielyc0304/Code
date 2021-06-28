@@ -2,7 +2,7 @@
 #include<ctime>
 using namespace std;
 
-#define Size 10
+#define Size 10//Size最大值
 
 void swap(int *a, int *b){//交換數字; a, b位址
     int tmp;//tmp暫存值

@@ -11,48 +11,48 @@ int ans=10000000;//ans答案
 int i;//i旗標
 
 struct node *build_tree(int left, int right){//建立樹狀圖; left左邊界; right右邊界
-    struct node *Nod;//*Nod節點指標
+    struct node *nod;//*nod節點指標
     int mid;//mid中間點
     int j;//j旗標
 
-    Nod=new struct node;//動態配置
-    Nod->num=num2[i--];//Nod->num=num2[i], --i
+    nod=new struct node;//動態配置
+    nod->num=num2[i--];//nod->num=num2[i], --i
 
     if(left<right){//如果還可以分割
         for(j=right; j>=left; --j)
-            if(Nod->num==num1[j]){//找出中間點
+            if(nod->num==num1[j]){//找出中間點
                 mid=j;
 
                 break;
             }
         if(mid+1<=right)//如果右邊有字
-            Nod->right=build_tree(mid+1, right);
+            nod->right=build_tree(mid+1, right);
         else//如果右邊沒有字
-            Nod->right=NULL;
+            nod->right=NULL;
         if(left<=mid-1)//如果左邊有字
-            Nod->left=build_tree(left, mid-1);
+            nod->left=build_tree(left, mid-1);
         else//如果左邊沒有字
-            Nod->left=NULL;
+            nod->left=NULL;
     }
     else{//如果不能分割
-        Nod->left=NULL;
-        Nod->right=NULL;
+        nod->left=NULL;
+        nod->right=NULL;
     }
-    return Nod;//回傳Nod位址
+    return nod;//回傳nod位址
 }
-void traverse(struct node *Node, int sum){//尋找根節點到葉節點的最小總和; *Node節點指標; sum總和
-    if(Node->left==NULL && Node->right==NULL){//如果是葉節點
-        sum+=Node->num;
+void traverse(struct node *node, int sum){//尋找根節點到葉節點的最小總和; *node節點指標; sum總和
+    if(node->left==NULL && node->right==NULL){//如果是葉節點
+        sum+=node->num;
 
         if(ans>sum)//如果ans不是最小總和
             ans=sum;
     }
-    sum+=Node->num;
+    sum+=node->num;
 
-    if(Node->left!=NULL)//如果左邊有子節點
-        traverse(Node->left, sum);
-    if(Node->right!=NULL)//如果右邊有子節點
-        traverse(Node->right, sum);
+    if(node->left!=NULL)//如果左邊有子節點
+        traverse(node->left, sum);
+    if(node->right!=NULL)//如果右邊有子節點
+        traverse(node->right, sum);
 }
 int main(){//後序與中序建立樹求最小路徑和
     struct node *roo;//*roo根節點指標

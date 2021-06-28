@@ -3,14 +3,12 @@
 #include<cstring>
 using namespace std;
 
-#define MAX 100000
-
-deque<int> lea;//lea葉節點
-int dep[MAX], chi[MAX]={0}, par[MAX]={0};//dep節點深度; chi子節點個數; par父節點
+#define MAX 100000//MAX最大值
 
 int main(){//樹狀圖分析(10610第3題)
     int n, k, num;//n節點總數; k子節點總數; num子節點
-    int nod;//nod節點
+    deque<int> lea;//lea葉節點
+    int dep[MAX], chi[MAX]={0}, par[MAX]={0}, nod;//dep節點深度; chi子節點個數; par父節點; nod節點
     int ans=0;//ans答案
     int i, j;//i, j旗標
 

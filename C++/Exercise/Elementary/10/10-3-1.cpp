@@ -31,25 +31,20 @@ void DFS(int node, int sum){//深度優先搜尋; node節點; sum長度總和
     }
 }
 int main(){//使用DFS求最長路徑長度
-    string a, b, sta;//a起點; b終點; sta遍歷起點
+    string a, b, sta;//a, b節點，建立無向圖; sta遍歷起點
     int n, m;//n點總數; m邊總數
-    int tmp2, tmp3, tmp4;//tmp2, tmp3, tmp3暫存值
     int i;//i旗標
 
     while(cin>>n>>m){
         for(i=0; i<m; ++i){
             cin>>a>>b;
-            tmp2=num_conversion(a);
-            tmp3=num_conversion(b);
-            edg[tmp2].push_back(tmp3);
-            edg[tmp3].push_back(tmp2);
+            edg[num_conversion(a)].push_back(num_conversion(b));
+            edg[num_conversion(b)].push_back(num_conversion(a));//建立無向圖
         }
         cin>>sta;
-        tmp4=num_conversion(sta);
+        c[num_conversion(sta)]=1;
 
-        c[tmp4]=1;
-
-        DFS(tmp4, 0);//深度優先搜尋
+        DFS(num_conversion(sta), 0);//深度優先搜尋
 
         cout<<ans<<endl;//輸出最長路徑長度
 

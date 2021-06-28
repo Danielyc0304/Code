@@ -4,8 +4,8 @@ using namespace std;
 
 void printList(list<int> a){//輸出; a數字
     cout<<"目前LinkedList內的資料：";
-    list<int>::iterator it;//宣告list的迭代器
-    for(it=a.begin(); it!=a.end(); ++it)
+    
+    for(auto it=a.begin(); it!=a.end(); ++it)//宣告list<int>的迭代器
         cout<<*it<<' ';
     cout<<endl;//輸出鏈結串列
 }
@@ -21,7 +21,7 @@ int main(){//Linked List使用STL實作
     a.push_back(4);
     printList(a);
 
-    list<int>::iterator it=a.begin();//宣告list的迭代器
+    auto it=a.begin();//宣告list<int>的迭代器
     ++it;
     ++it;
 

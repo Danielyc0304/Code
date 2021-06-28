@@ -3,7 +3,7 @@
 #include<ctime>
 using namespace std;
 
-#define Size 10
+#define Size 10//Size最大值
 
 bool cmp1(int a, int b){//排序規則; a, b數字
     return a<b;//數字小的在前面

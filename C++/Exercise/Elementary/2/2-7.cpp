@@ -3,7 +3,7 @@
 #include<ctime>
 using namespace std;
 
-#define Size 40
+#define Size 40//Size最大值
 
 typedef struct grade{//成績
     int chinese;//chinese國文成績

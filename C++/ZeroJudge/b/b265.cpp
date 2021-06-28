@@ -25,8 +25,7 @@ int main(){//Q11286 - Conformity
 
             num2.clear();//初始化
         }
-        map<string, int>::iterator it;//宣告迭代器
-        for(it=com.begin(); it!=com.end(); ++it){
+        for(auto it=com.begin(); it!=com.end(); ++it){//宣告map<string, int>的迭代器
             if(it->second>ans){//如果數值大於答案
                 ans=it->second;
                 c=0;

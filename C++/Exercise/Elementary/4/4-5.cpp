@@ -12,7 +12,7 @@ struct data{//資料
     int right;//right右邊
 };
 struct data a[25];//a資料
-deque<data> tre;//tre樹狀圖
+deque<struct data> tre;//tre樹狀圖
 char cod[10];//cod編碼
 
 bool cmp(struct data a, struct data b){//排序規則; a, b資料

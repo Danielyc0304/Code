@@ -16,11 +16,10 @@ int main(){//[福州19中]众数
         
         fre[num]+=1;
     }
-    map<int, int>::iterator it;//宣告迭代器
-    for(it=fre.begin(); it!=fre.end(); ++it)
+    for(auto it=fre.begin(); it!=fre.end(); ++it)//宣告map<int, int>的迭代器
         if(it->second>c)//找出最大的次數
             c=it->second;
-    for(it=fre.begin(); it!=fre.end(); ++it)
+    for(auto it=fre.begin(); it!=fre.end(); ++it)
         if(it->second==c)//如果出現次數為最大次數
             cout<<it->first<<' '<<c<<endl;//輸出眾數
     return 0;
