@@ -60,6 +60,9 @@ int main(){//後序運算
             }
         }
         cout<<num1.top()<<endl;//輸出結果
+
+        ss.clear();
+        num1.pop();//初始化
    }
    return 0;
 }

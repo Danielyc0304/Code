@@ -16,13 +16,13 @@ int num_conversion(string a){//轉換成數字; a字串
         tmp1[a]=tmp1.size();//建立新資料
     return tmp1[a];//回傳a的value
 }
-int main(){//使用BellmanFord找最短路徑
+int main(){//使用Bellman Ford找最短路徑
     string a, b, sta;//a起點, b終點，建立有向圖; sta遍歷起點
     int n, m;//n點總數; m邊總數
     queue<struct edge> edg_list;//edg_list待處理邊
     deque<struct edge> edg[100];//edg邊
     struct edge tmp2, nedg;//tmp2暫存值; nedg現處理邊
-    bool que[100]={false};//que是否在edg_list裡面
+    bool c[100]={false};//c判斷
     int ans[100];//ans答案
     int i;//i旗標
 
@@ -40,22 +40,22 @@ int main(){//使用BellmanFord找最短路徑
     nedg.start=num_conversion(sta);
     ans[num_conversion(sta)]=0;//原點距離為0
     edg_list.push(nedg);
-    que[num_conversion(sta)]=true;//設定點sta在edg_list裡面
+    c[num_conversion(sta)]=true;//設定點sta在edg_list裡面
     
     while(!edg_list.empty()){//廣度優先搜尋
         nedg=edg_list.front();//提取最上面的邊
         edg_list.pop();//刪除最上面的邊
 
-        que[nedg.start]=false;//設定點nedg.start不在edg_list裡面
+        c[nedg.start]=false;//設定點nedg.start不在edg_list裡面
 
         for(i=0; i<edg[nedg.start].size(); ++i)
             if(ans[edg[nedg.start][i].end]>ans[nedg.start]+edg[nedg.start][i].weights){//如果目前最短距離>目標點最短距離+目標點到目標終點的距離
                 ans[edg[nedg.start][i].end]=ans[nedg.start]+edg[nedg.start][i].weights;//更新最短距離
 
-                if(que[edg[nedg.start][i].end]==false){//如果終點不在edg_list裡面
+                if(c[edg[nedg.start][i].end]==false){//如果終點不在edg_list裡面
                     tmp2.start=edg[nedg.start][i].end;
                     edg_list.push(tmp2);//儲存邊在最後面
-                    que[tmp2.start]=true;//設定點tmp2.start在edg_list裡面
+                    c[tmp2.start]=true;//設定點tmp2.start在edg_list裡面
                 }
             }
     }

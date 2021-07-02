@@ -14,7 +14,7 @@ bool cmp1(struct job a, struct job b){//排序規則; a, b工作
 bool cmp2(struct job a, struct job b){//排序規則; a, b工作
     return a.x<b.x;//截止時間早的在前面
 }
-int main(){//工作排程 4 有截止期限的最大利潤
+int main(){//工作排程4-有截止期限的最大利潤
     struct job a[99];//a工作資料
     int n;//n工作總數
     struct job num[99];//num排序後的工作

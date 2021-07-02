@@ -9,7 +9,7 @@ struct job{//工作
 bool cmp(struct job a, struct job b){//排序規則; a, b工作時間
     return a.e<b.e;
 }
-int main(){//工作排程 1 最多有幾個工作可以執行
+int main(){//工作排程1-最多有幾個工作可以執行
     struct job a[99];//a工作時間
     int n;//n工作總數
     int s=0;//s計算值

@@ -21,43 +21,43 @@ int num_conversion(string a){//轉換成數字; a字串
 bool traverse(int node){
     queue<struct edge> edg_list;//待處理邊
     struct edge nedg;//nedg現處理邊
-    bool que[100]={false};//que是否在edg_list裡面
-    int c[100], dis[100];//c計數; dis距離起點的最短距離
+    bool c1[100]={false};//c1判斷
+    int c2[100], dis[100];//c2計數; dis距離起點的最短距離
     int i;//i旗標
 
     nedg.start=node;
     dis[node]=0;//原點距離為0
     edg_list.push(nedg);
-    que[node]=true;//設定點node在edg_list裡面
+    c1[node]=true;//設定點node在edg_list裡面
 
     while(!edg_list.empty()){//廣度優先搜尋
         nedg=edg_list.front();//提取最上面的邊
         edg_list.pop();//刪除最上面的邊
 
-        que[nedg.start]=false;//設定點nedg.start不在edg_list裡面
+        c1[nedg.start]=false;//設定點nedg.start不在edg_list裡面
 
         for(i=0; i<edg[nedg.start].size(); ++i){
             if(dis[edg[nedg.start][i].end]>dis[nedg.start]+edg[nedg.start][i].weights){//如果目前最短距離>目標點最短距離+目標點到目標終點的距離
-                ++c[edg[nedg.start][i].end];
+                ++c2[edg[nedg.start][i].end];
 
-                if(c[edg[nedg.start][i].end]>=n)
+                if(c2[edg[nedg.start][i].end]>=n)
                     return true;
                 dis[edg[nedg.start][i].end]=dis[nedg.start]+edg[nedg.start][i].weights;//更新最短距離
 
-                if(que[edg[nedg.start][i].end]==false){//如果終點不在edg_list裡面
+                if(c1[edg[nedg.start][i].end]==false){//如果終點不在edg_list裡面
                     tmp2.start=edg[nedg.start][i].end;
                     edg_list.push(tmp2);//儲存邊在最後面
-                    que[tmp2.start]=true;//設定點tmp2.start在edg_list裡面
+                    c1[tmp2.start]=true;//設定點tmp2.start在edg_list裡面
                 }
             }
         }
     }
     return false;
 }
-int main(){//使用BellmanFord偵測負環
+int main(){//使用Bellman Ford偵測負環
     string a, b;//a起點, b終點，建立有向圖
     int m;//m邊總數
-    bool ans=false;//ans答案
+    bool c=false;//c判斷
     int i;//i旗標
 
     while(cin>>n>>m){
@@ -70,15 +70,19 @@ int main(){//使用BellmanFord偵測負環
         }
         for(i=0; i<m; ++i)
             if(edg[i].size()>0){
-                ans=traverse(i);
+                c=traverse(i);
 
-                if(ans==true)
+                if(c==true)
                     break;
             }
-        if(ans==true)
+        if(c==true)
             cout<<"找到負環\n";
         else
             cout<<"找不到負環\n";//輸出結果
+        tmp1.clear();
+        for(i=0; i<n; ++i)
+            edg[i].clear();
+        c=false;//初始化
     }
     return 0;
 }

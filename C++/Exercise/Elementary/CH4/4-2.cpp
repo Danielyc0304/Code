@@ -12,7 +12,7 @@ bool cmp(struct job a, struct job b){//排序規則; a, b工作時間
         return a.e<b.e;//結束時間早的在前面
     return a.s<b.s;//開始時間早的在前面
 }
-int main(){//工作排程 2 最多有幾台機器一起運作
+int main(){//工作排程2-最多有幾台機器一起運作
     struct job a[99];//a工作時間
     int n;//n工作總數
     bool c=false;//c判斷

@@ -28,7 +28,7 @@ void print(){
     }
     cout<<endl;//輸出所有點到其他點的距離
 }
-int main(){//使用FordWarshall找最短路徑
+int main(){//使用Floyd Warshall找最短路徑
     string a, b;//a起點, b終點，建立有向圖
     int m, wei;//m邊總數; wei權重
     int i, j, k;//i, j, k旗標

@@ -42,7 +42,7 @@ void quicksort(int *num, int left, int right){//排序; num數字; left左邊界
         quicksort(num, j+1, right);//以第一個數的現在位置為基準，分割成左半部與右半部
     }
 }
-int main(){//快速排序， 演算法效率為O(nlog(n))，暫存記憶體空間為O(log(n))
+int main(){//快速排序(QuickSort)， 演算法效率為O(nlog(n))，暫存記憶體空間為O(log(n))
     int num[Size];//num數字
     int i;//i旗標
 

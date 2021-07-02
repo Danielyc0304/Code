@@ -9,7 +9,7 @@ void DFS(int node, int start){//深度優先搜尋; node節點; start遍歷起�
     int end;//end遍歷終點
     int i;//i旗標
 
-    if(c2)//如果已經找到循環
+    if(c2==true)//如果已經找到循環
         return;
     for(i=0; i<edg[node].size(); ++i){
         end=edg[node][i];

@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){//哪條路可以容納最多車子的數量
     int n, m, a, b, dis;//n點總數; m邊總數; a起點, b終點，建立雙向圖; dis距離
-    int ans[100][100];//ans答案
+    int ans[100][100]={0};//ans答案
     int i, j, k;//i, j, k旗標
 
     memset(ans, -1, sizeof(ans));
@@ -27,6 +27,7 @@ int main(){//哪條路可以容納最多車子的數量
                 cout<<ans[i][j]<<' ';
             cout<<endl;//輸出所有點到其他點可容納的最多車子數量
         }
+        memset(ans, -1, sizeof(ans));//初始化
     }
     return 0;
 }

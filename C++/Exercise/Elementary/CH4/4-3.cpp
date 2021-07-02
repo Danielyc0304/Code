@@ -5,7 +5,7 @@ using namespace std;
 bool cmp(int a, int b){//排序規則; a, b數字
     return a<b;//數字小的在前面
 }
-int main(){//工作排程 3 最小平均等待時間
+int main(){//工作排程3-最小平均等待時間
     int x[99], n;//x工作時間; n工作總數
     int s1=0;//s1計算值
     double s2=0;//s2計算值

@@ -1,5 +1,4 @@
 #include<iostream>
-#include<cstring>
 using namespace std;
 
 int main(){//統計字母數量

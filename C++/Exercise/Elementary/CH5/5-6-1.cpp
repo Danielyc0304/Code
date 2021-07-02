@@ -29,7 +29,7 @@ void Sort(int i){//排列組合; i旗標
         c=true;//初始化
     }        
 }
-int main(){
+int main(){//排列
     int i;//i旗標
     
     while(cin>>n){

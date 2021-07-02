@@ -49,7 +49,7 @@ void mergesort(int *num, int left, int right){//排序; num數字; left左邊界
         print(num, Size);//輸出排序中的定位點與陣列
     }
 }
-int main(){//合併排序，演算法效率為O(log(n))，暫存記憶體空間為O(n)
+int main(){//合併排序(MergeSort)，演算法效率為O(log(n))，暫存記憶體空間為O(n)
     int num[Size];//num數字
     int i;//i旗標
 

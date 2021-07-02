@@ -1,6 +1,5 @@
 #include<iostream>
 #include<stack>
-#include<cstring>
 using namespace std;
 
 int main(){//括弧的配對
@@ -19,7 +18,7 @@ int main(){//括弧的配對
 
                     ++ans;
                 }
-                else{//如果沒有}
+                else{//如果沒有{
                     ans=-1;//無法配對
 
                     break;
@@ -30,6 +29,9 @@ int main(){//括弧的配對
             cout<<"共有"<<ans<<"對的大括號\n";
         else
             cout<<"配對失敗\n";//輸出結果
+        while(!bra.empty())
+            bra.pop();
+        ans=0;
     }
     return 0;
 }

@@ -2,7 +2,7 @@
 #include<algorithm>
 using namespace std;
 
-int main(){
+int main(){//排列
     int num[100], n;//num數字; n數字總數
     int i;//i旗標
 
