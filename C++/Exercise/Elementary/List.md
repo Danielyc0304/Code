@@ -34,6 +34,16 @@
   - 2-8-1 成績指標(10503第1題)
   - 2-8-2 線段覆蓋長度(10503第3題)
 - UVa Online Judge網路解題資源
+  - 排序
+    - 基礎題UVa10107 What is the Median?
+    - 基礎題UVa11462 Age Sort
+    - 基礎題UVa10474 Where is the Marble?
+    - 進階題UVa11369 Shopaholic
+    - 進階題UVa10763 Foreign Exchange
+  - 多鍵值排序
+    - 基礎題UVa10062 Tell me the frequencies!
+    - 基礎題UVa10008 What's Cryptanalysis?
+    - 進階題UVa10194 Football(aka Soccer)
 
 ---
 
@@ -48,6 +58,18 @@
   - 3-5-2 定時K彈(10510第3題)
   - 3-5-3 棒球遊戲(10510第4題)
 - UVa Online Judge網路解題資源
+  - 模擬
+    - 基礎題UVa402 M\*A\*S\*H
+    - 基礎題UVa10191 Longest Nap
+    - 基礎題UVa10050 Hartals
+    - 基礎題UVa573 The snail
+    - 基礎題UVa100 The 3n+1 problem
+    - 進階題UVa10205 Stack'em Up
+    - 進階題UVa10196 Check the Check
+    - 進階題UVa10315 Poker Hands
+    - 進階題UVa246 10-20-30
+    - 進階題UVa12174 Shuffle
+    - 進階題UVa10033 Interpreter
 
 ---
 
@@ -63,6 +85,12 @@
 - 4-8 APCS貪婪相關實作題詳解
   - 4-8-1 物品堆疊(10610第4題)
 - UVa Online Judge網路解題資源
+  - 模擬
+    - 基礎題UVa11269 Setting Problems
+    - 基礎題UVa10954 Add All
+    - 進階題UVa1605 Building for UN
+    - 進階題UVa668 Parliament
+    - 進階題UVa 311 Packets
 
 ---
 
@@ -83,6 +111,16 @@
 - 5-7 8-queen問題
 - 5-8 演算法的複雜度與對應的資料量
 - UVa Online Judge網路解題資源
+  - 暴力
+    - 基礎題UVa494 Kindergarten Counting Game(字串分析)
+    - 基礎題UVa10252 Common Permutation(字串分析)
+    - 基礎題UVa11577 Letter Frequency(字串分析)
+    - 基礎題UVa441 Lotto(組合)
+    - 基礎題UVa10098 Generating Fast(排列)
+    - 基礎題UVa750 8 Queens Chess Problem(8Queens)
+    - 基礎題UVa167 The Sultan's Successors(8Queens)
+    - 基礎題UVa516 Prime Land(質數)
+    - 基礎題UVa10791 Minimum Sum LCM(質數)
 
 ---
 
@@ -100,6 +138,17 @@
 - 6-4 APCS二元搜尋相關實作題詳解
   - 6-4-1 基地台(10603第4題)
 - UVa Online Judge網路解題資源
+  - 分而治之(Divide and Conquer)
+    - 基礎題UVa374 Big Mod
+    - 基礎題UVa10245 The Closest Pair Problem
+    - 進階題UVa12627 Erratic Expansion
+    - 進階題UVa11495 Bubbles and Buckets
+  - 二元搜尋(Binary Search)
+    - 基礎題UVa12097 Pie
+    - 基礎題UVa1644 Prime Gap
+    - 進階題UVa1152 4 Values whose Sum is 0
+    - 進階題UVa714 Copying Books
+    - 進階題UVa10539 Almost Prime Numbers
 
 ---
 
@@ -117,6 +166,14 @@
   - 7-5-1 最長共同子序列—不考慮最佳解路徑
   - 7-5-2 最長共同子序列—考慮最佳解路徑
 - UVa Online Judge網路解題資源
+  - 動態規劃(Dynamic Programming)
+    - 基礎題UVa900 Brick Wall Patterns(費氏數列)
+    - 基礎題UVa12149 Feynman(數列)
+    - 基礎題UVa562 Dividing coins(01背包)
+    - 基礎題UVa12563 Jin Ge Jin Qu hao(01背包)
+    - 基礎題UVa357 Let Me Count The Ways(換零錢)
+    - 基礎題UVa10066 The Twin Towers(最長共同子序列)
+    - 基礎題UVa10192 Vacation(最長共同子序列)
 
 ---
 
@@ -135,6 +192,12 @@
   - 8-3-1 Linked List使用STL實作
   - 8-3-2 可以插隊在任意位置
 - UVa Online Judge網路解題資源
+  - 基礎題UVa12100 Printer Queue(Queue)
+  - 基礎題UVa10935 Throwing cards away I(Queue)
+  - 基礎題UVa514 Rails(Stack)
+  - 基礎題UVa673 Parentheses Balance(Stack)
+  - 基礎題UVa12207 That is Your Queue(Linked List)
+  - 進階題UVa540 Team Queue(Linked List)
 
 ---
 
@@ -156,6 +219,16 @@
 - 9-5 APCS樹狀結構相關實作題詳解
   - 9-5-1 樹狀圖分析(10610第3題)
 - UVa Online Judge網路解題資源
+  - 樹狀結構
+    - 基礎題UVa112 Tree Summing
+    - 基礎題UVa536 Tree Recovery
+    - 基礎題UVa10701 Pre, in and post
+    - 基礎題UVa548 Tree
+    - 基礎題UVa839 Not so Mobile
+    - 基礎題UVa679 Dropping Balls
+    - 基礎題UVa699 The Falling Leaves
+    - 進階題UVa122 Trees on the level
+    - 進階題UVa297 Quadtrees
 
 ---
 
@@ -177,6 +250,16 @@
 - 10-5 APCS圖形結構相關實作題詳解
   - 10-5-1 血緣關係(10503第4題)
 - UVa Online Judge網路解題資源
+  - 圖形結構
+    - 基礎題UVa10763 Foreign Exchange(DFS)
+    - 基礎題UVa11094 Continents(DFS)
+    - 基礎題UVa11244 Counting Stars(DFS)
+    - 基礎題UVa11283 Playing Boggle(DFS)
+    - 基礎題UVa439 Knight Moves(BFS)
+    - 基礎題UVa11352 Crazy King(BFS)
+    - 進階題UVa10067 Playing with Wheels(BFS)
+    - 進階題UVa10603 Fill(BFS)
+    - 進階題UVa821 PageHopping(BFS)
 
 ---
 
@@ -196,6 +279,18 @@
   - 11-4-2 哪條路可以容納最多車子的數量
 - 11-5 比較最短路徑演算法Dijkstra、Bellman Ford與Floyd Warshall
 - UVa Online Judge網路解題資源
+  - 圖形結構
+    - 基礎題UVa10986 Sending email(Dijkstra)
+    - 基礎題UVa929 Number Maze(Dijkstra)
+    - 基礎題UVa558 Wormholes(BellmanFord)
+    - 進階題UVa11090 Going in Cycle!!(BellmanFord)
+    - 進階題UVa10801 Lift Hopping(BellmanFord)
+    - 基礎題UVa534 Frogger(Floyd Warshall)
+    - 基礎題UVa544 Heavy Cargo(Floyd Warshall)
+    - 基礎題UVa10099 The Tourist Guide(Floyd Warshall)
+    - 基礎題UVa247 Calling Circles(Floyd Warshall)
+    - 基礎題UVa821 PageHopping(Floyd Warshall)
+    - 基礎題UVa1001 Say Cheese(Floyd Warshall)
 
 ---
 
@@ -213,6 +308,14 @@
 - 12-4 找出關節點
   - 12-4-1 找出關鍵的路口
 - UVa Online Judge網路解題資源
+  - 圖形結構
+    - 基礎題UVa10305 Ordering Tasks(拓撲排序Topology Sort)
+    - 基礎題UVa11060 Beverages(拓撲排序Topology Sort)
+    - 基礎題UVa10129 Play on Words(尤拉路徑Euler Trail)
+    - 基礎題UVa10034 Freckles(最小生成樹)
+    - 基礎題UVa10147 Highways(最小生成樹)
+    - 基礎題UVa10199 Tourist Guide(關節點articulation point)
+    - 基礎題UVa315 Network(關節點articulation point)
 
 ---
 
