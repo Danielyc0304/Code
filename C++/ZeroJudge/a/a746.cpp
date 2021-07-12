@@ -2,7 +2,7 @@
 #include<cstring>
 using namespace std;
 
-int main(){//画蛇添足
+int main(){//畫蛇添足
     char a[503][503];//a圖案
     int n, m, x, y;//n圖案邊長; m座標總數; x, y座標
     int tmpx=0, tmpy=0;//tmpx, tmpy座標暫存值

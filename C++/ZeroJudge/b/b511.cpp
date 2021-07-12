@@ -2,7 +2,7 @@
 using namespace std;
 
 int N;//N面值總數
-int ans[5];//ans答案
+int ans[5]={0};//ans答案
 
 void combination(int face[], int money, int j){//排列組合; face面值; money目標金額; j旗標
     int i;//i旗標

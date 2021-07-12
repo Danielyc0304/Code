@@ -4,7 +4,7 @@ using namespace std;
 int GCD(int a, int b){//最大公因數; a, b數字
     if(b==0)
         return a;
-    return GCD(b, a%b);
+    return GCD(b, a%b);//輾轉相除法，回傳最大公因數
 }
 int main(){//最大公因數(GCD)
     int a, b;//a, b數字

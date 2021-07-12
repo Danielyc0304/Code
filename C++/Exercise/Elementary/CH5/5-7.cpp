@@ -7,11 +7,11 @@ void location(int i){//排列組合; i旗標
     int j, k;//j, k旗標
 
     if(i<8){
-        for(j=0; j<8; ++j)
-            for(k=0; k<i; ++k){
+        for(j=0; j<8; ++j)//現在預設位置(第i列第j行)
+            for(k=0; k<i; ++k){//檢查到第k列的棋子
                 if(j==ans2[k])//如果在同一行
                     break;
-                if(abs(j-ans2[k])==abs(k-i))//如果在對角線(垂直距離與水平距離相等)
+                if(abs(j-ans2[k])==i-k)//如果在對角線(垂直距離與水平距離相等)
                     break;
                 if(k==i-1){//如果都檢查完了
                     ans2[i]=j;
