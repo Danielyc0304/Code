@@ -52,7 +52,7 @@ bool F(int a[]){//同花
 int level1(int a[]){//判斷牌的大小; a數字
     int i, j;//i, j旗標
 
-    if(SF(a))
+    if(SF(a)==true)
         return 9;//回傳同花順
     for(i=0; i<13; ++i)
         if(c1[i]==4)
@@ -67,7 +67,7 @@ int level1(int a[]){//判斷牌的大小; a數字
                 if(c1[j]==2)
                     return 7;//回傳葫蘆
     }
-    if(F(a))
+    if(F(a)==true)
         return 6;//回傳同花
     for(i=0; i<9; ++i)
         if(c1[i]==1 && c1[i+1]==1 && c1[i+2]==1 && c1[i+3]==1 && c1[i+4]==1)
@@ -88,7 +88,7 @@ int level1(int a[]){//判斷牌的大小; a數字
 int level2(int a[]){//判斷牌的大小; a數字
     int i, j;//i, j旗標
 
-    if(SF(a))
+    if(SF(a)==true)
         return 9;//回傳同花順
     for(i=0; i<13; ++i)
         if(c2[i]==4)
@@ -103,7 +103,7 @@ int level2(int a[]){//判斷牌的大小; a數字
                 if(c2[j]==2)
                     return 7;//回傳葫蘆
     }
-    if(F(a))
+    if(F(a)==true)
         return 6;//回傳同花
     for(i=0; i<9; ++i)
         if(c2[i]==1 && c2[i+1]==1 && c2[i+2]==1 && c2[i+3]==1 && c2[i+4]==1)
