@@ -2,9 +2,9 @@
 using namespace std;
 
 int GCD(int a, int b){//最大公因數; a, b數字
-   if(b==0)
-      return a;
-   return GCD(b, a%b);//輾轉相除法，回傳最大公因數
+    if(b==0)
+       return a;
+    return GCD(b, a%b);//輾轉相除法，回傳最大公因數
 }
 int main(){//分數運算-2
     char ope;//ope運算符號

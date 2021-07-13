@@ -18,7 +18,7 @@ int main(){//求1到10000的所有質數
     int i;//i旗標
 
     for(i=2; i<=10000; ++i)
-        if(prime(i))//如果是質數
+        if(prime(i)==true)//如果是質數
             cout<<i<<endl;//輸出質數
     return 0;
 }

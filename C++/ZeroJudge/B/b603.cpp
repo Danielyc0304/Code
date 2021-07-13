@@ -3,9 +3,9 @@
 using namespace std;
 
 int GCD(int a, int b){//最大公因數; a, b數字
-   if(b==0)
-      return a;
-   return GCD(b, a%b);//輾轉相除法，回傳最大公因數
+    if(b==0)
+        return a;
+    return GCD(b, a%b);//輾轉相除法，回傳最大公因數
 }
 int main(){//拋物線方程式
     double x1, y1, x2, y2;//x1, y1頂點座標; x2, y2拋物線上座標
