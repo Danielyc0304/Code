@@ -19,13 +19,13 @@ int main(){//勘根定理
                 c1=true;
             }
             else if((a*pow(i, 5)+b*pow(i, 4)+c*pow(i, 3)+d*pow(i, 2)+e*i+f)*(a*pow(i+1, 5)+b*pow(i+1, 4)+c*pow(i+1, 3)+d*pow(i+1, 2)+e*(i+1)+f)<0 && i<36){//f(i)*f(i+1)<0
-                cout<<i<<' '<<i+1<<endl;
+                cout<<i<<' '<<i+1<<endl;//在i與i+1中間
 
                 c1=true;
             }
         }
         if(c1==false)
-            cout<<"N0THING! >\\\\\\<\n";
+            cout<<"N0THING! >\\\\\\<\n";//輸出結果
     }
     return 0;
 }
