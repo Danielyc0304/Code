@@ -9,20 +9,21 @@ int main(){
     for(i=0; i<n; ++i){
         cin>>x>>y;
 
-        if(100-(x+y)>0 && 100-(x+y)<=30)
+        if(100-(x+y)>0 && 100-(x+y)<=30)//100-sqrt(x+y)*sqrt(x+y)
             cout<<"sad!\n";
         else if(100-(x+y)>30 && 100-(x+y)<=60)
             cout<<"hmm~~\n";
         else if(100-(x+y)>60 && 100-(x+y)<100)
             cout<<"Happyyummy\n";
         else
-            cout<<"evil!!\n";
+            cout<<"evil!!\n";//輸出結果
     }
     return 0;
 }
 /*
 Input:
-
+1
+20 20
 Output:
-
+hmm~~
 */

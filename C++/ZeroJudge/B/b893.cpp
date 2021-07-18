@@ -13,12 +13,12 @@ int main(){//勘根定理
         cout<<"Too many... = =\"\n";
     else{
         for(i=-36; i<=36; ++i){//-2147483647<=x^6<=2147483647 --> 大約-36<=x<=36
-            if(a*pow(i, 5)+b*pow(i, 4)+c*pow(i, 3)+d*pow(i, 2)+e*i+f==0){
+            if(a*pow(i, 5)+b*pow(i, 4)+c*pow(i, 3)+d*pow(i, 2)+e*i+f==0){//f(i)=0
                 cout<<i<<' '<<i<<endl;
 
                 c1=true;
             }
-            else if((a*pow(i, 5)+b*pow(i, 4)+c*pow(i, 3)+d*pow(i, 2)+e*i+f)*(a*pow(i+1, 5)+b*pow(i+1, 4)+c*pow(i+1, 3)+d*pow(i+1, 2)+e*(i+1)+f)<0 && i<36){
+            else if((a*pow(i, 5)+b*pow(i, 4)+c*pow(i, 3)+d*pow(i, 2)+e*i+f)*(a*pow(i+1, 5)+b*pow(i+1, 4)+c*pow(i+1, 3)+d*pow(i+1, 2)+e*(i+1)+f)<0 && i<36){//f(i)*f(i+1)<0
                 cout<<i<<' '<<i+1<<endl;
 
                 c1=true;
